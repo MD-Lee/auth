@@ -1,0 +1,82 @@
+<?php if (!defined('THINK_PATH')) exit();?><form class="layui-form">
+  <div class="layui-form-item">
+    <label class="layui-form-label">用户名</label>
+    <div class="layui-input-inline">
+      <input type="text" name="user_name" lay-verify="required" placeholder="请输入用户名" autocomplete="off"  value="<?php echo ($user_info["user_name"]); ?>" id="name" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item" pane="">
+    <label class="layui-form-label">单选框</label>
+    <div class="layui-input-block">
+      <input name="sex" value="男" title="男" checked="" type="radio"><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><span>男</span></div>
+      <input name="sex" value="女" title="女" type="radio"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><span>女</span></div>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">登录密码</label>
+    <div class="layui-input-inline">
+      <input type="password" name="password" lay-verify="required" placeholder="请输入密码" autocomplete="off" id="pwd" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">手机号</label>
+    <div class="layui-input-inline">
+      <input name="mobile" lay-verify="phone"  value="<?php echo ($user_info["mobile"]); ?>" autocomplete="off" placeholder="请输入手机号"  class="layui-input" type="tel">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <div class="layui-inline">
+      <label class="layui-form-label">入职日期</label>
+      <div class="layui-input-inline">
+        <input name="create_time" id="date" lay-verify="date"  value="<?php echo ($user_info["create_time"]); ?>" placeholder="yyyy-mm-dd" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})" type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">工资</label>
+    <div class="layui-input-inline">
+      <input type="text" name="wages" lay-verify="required" placeholder="请输入工资" value="<?php echo ($user_info["wages"]); ?>"autocomplete="off"  id="wages" class="layui-input">
+    </div>
+  </div>
+
+
+  <input type="hidden" value="<?php echo ($user_info["id"]); ?>" name="id">
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="user">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+<script>
+layui.use(['laypage','layer','form','laydate'], function(){
+	var form = layui.form()
+        ,laydate = layui.laydate,
+   		 $ = layui.jquery
+	  //监听提交
+	  form.on('submit(user)', function(data){
+	    var userInfo = data.field;
+		var url = "<?php echo U('User/editUser');?>";
+		$.post(url,userInfo,function(data){
+			if(data.status == 'error'){
+				  layer.msg(data.msg,{icon: 5});//失败的表情
+				  return;
+			  }else if(data.status == 'success'){
+				  layer.msg(data.msg, {
+					  icon: 6,//成功的表情
+					  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+					}, function(){
+					   location.reload();
+					}); 
+			  }
+		})
+		
+	    return false;//阻止表单跳转
+	  });
+	});
+</script>
