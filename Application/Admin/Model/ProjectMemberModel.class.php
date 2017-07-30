@@ -83,6 +83,25 @@ class ProjectMemberModel extends BaseModel
 
         return $this->where($where)->find();
     }
+    /**
+     * @description:根据uid查询小组
+     * @author wuyanwen(2016年12月1日)
+     * @param unknown $company_id
+     */
+    public function getProjectListByUid($uid)
+    {
+        $where = array(
+            'eid'     => $uid,
+        );
+
+       $project_info = $this->where($where)->field('pid,id')->select();
+
+       foreach ($project_info as & $v){
+           $v['project_name'] = M('project_member')->join('project as b on project_member.pid = b.id')->where('project_member.id='.$v['id'])->getField('b.project_name');
+
+       }
+       return $project_info;
+    }
 
 
     /**

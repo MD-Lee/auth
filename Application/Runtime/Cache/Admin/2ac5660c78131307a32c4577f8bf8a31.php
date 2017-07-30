@@ -84,14 +84,15 @@
 
 					//请求表单
 				 $('.add').click(function(){
-					var url = "<?php echo U('User/addUser');?>";
+					var url = "<?php echo U('Work/addWork');?>";
+					alert(url);
 					$.get(url,function(data){
 						if(data.status == 'error'){
 							layer.msg(data.msg,{icon: 5});
 							return;
 						}
 						layer.open({
-							  title:'添加用户',
+							  title:'添加工时',
 							  type: 1,
 							  skin: 'layui-layer-rim', //加上边框
 							  area: ['500px'], //宽高
@@ -162,23 +163,7 @@
 							})
 					  });
 				});
-                //请求表单
-                $('.add').click(function(){
-                    var url = "<?php echo U('User/addUser');?>";
-                    $.get(url,function(data){
-                        if(data.status == 'error'){
-                            layer.msg(data.msg,{icon: 5});
-                            return;
-                        }
-                        layer.open({
-                            title:'添加用户',
-                            type: 1,
-                            skin: 'layui-layer-rim', //加上边框
-                            area: ['500px'], //宽高
-                            content: data,
-                        });
-                    })
-                });
+
 
 				
 			});

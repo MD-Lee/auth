@@ -42,8 +42,10 @@ class WorkController extends CommonController
      * @description:添加工时
      * @author wuyanwen(2016年12月1日)
      */
-    public function addwork()
+    public function addWork()
     {
+        $user_info = session('user_info');
+        $uid = $user_info['id'];
         if(IS_POST){
             
             $employee_info = array(
@@ -68,9 +70,10 @@ class WorkController extends CommonController
               $this->ajaxError('添加失败');
            }
         }else{
-            $admin_auth_group_model = D('AdminAuthGroup');
-            $data = $admin_auth_group_model->getGroupList();
-            $this->assign('list', $data['list']);
+            $project_member_model = D('ProjectMember');
+            $project_list = $project_member_model->getProjectListByUid($uid);
+
+            $this->assign('project_list', $project_list);
             $this->display();
         }
     }
