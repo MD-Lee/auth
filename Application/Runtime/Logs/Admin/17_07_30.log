@@ -9626,3 +9626,470 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2017-07-30T18:42:59+08:00 ] 127.0.0.1 /index.php/Work/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.023001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: start_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: end_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: start_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member_work` WHERE `uid` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0030s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:43:03+08:00 ] 127.0.0.1 /index.php/Work/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/addWork' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.024002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0030s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0030s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: achievements_ratio C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 22 行.
+NOTIC: [8] Undefined variable: project_id C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-30T18:43:03+08:00 ] 127.0.0.1 /index.php/Work/lay/modules/form.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/lay' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.023002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-30T18:43:43+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.025002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.025002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:43:44+08:00 ] 127.0.0.1 /index.php/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.023001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:43:48+08:00 ] 127.0.0.1 /index.php/Work/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.022001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: start_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: end_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: start_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member_work` WHERE `uid` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0030s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:43:51+08:00 ] 127.0.0.1 /index.php/Work/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/addWork' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.023001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0040s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0040s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: achievements_ratio C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 22 行.
+NOTIC: [8] Undefined variable: project_id C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:43:51+08:00 ] 127.0.0.1 /index.php/Work/lay/modules/form.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/lay' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.022002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:44:57+08:00 ] 127.0.0.1 /index.php/Work/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/addWork' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.014001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0040s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0040s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: achievements_ratio C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 22 行.
+NOTIC: [8] Undefined variable: project_id C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:44:57+08:00 ] 127.0.0.1 /index.php/Work/lay/modules/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/lay' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.024002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-30T18:46:08+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.024001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.024001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:46:08+08:00 ] 127.0.0.1 /index.php/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.014001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:46:17+08:00 ] 127.0.0.1 /index.php/Work/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.023002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: start_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: end_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: start_time C:\xampp\htdocs\auth\Application\Admin\Controller\WorkController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member_work` WHERE `uid` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0030s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-30T18:46:24+08:00 ] 127.0.0.1 /index.php/Work/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/addWork' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.023002s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.023002s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0040s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0040s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: achievements_ratio C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 22 行.
+NOTIC: [8] Undefined variable: project_id C:\xampp\htdocs\auth\Application\Runtime\Cache\Admin\b8639e0c0fc92a72eaede945bb8f1dd1.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-30T18:46:24+08:00 ] 127.0.0.1 /index.php/Work/lay/lib/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/lay' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.022001s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','44','58','59','60','61','62','40','45','41','64','63','65','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+

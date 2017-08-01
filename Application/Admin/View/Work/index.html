@@ -28,9 +28,7 @@
 				<button  class="layui-btn layui-btn-small add">
 					<i class="layui-icon">&#xe608;</i> 添加
 				</button>
-				<button  class="layui-btn layui-btn-small add">
-					<i class="layui-icon">&#xe608;</i>补录
-				</button>
+
 			</blockquote>
 			<fieldset class="layui-elem-field">
 				<legend>工时列表</legend>
@@ -58,7 +56,8 @@
 							  <td>{$vo.created_time|date="Y-m-d",###}</td>
 							  <td>{$vo.additional_recording_time}</td>
 							  <td>
-								  <a data="{$vo.id}" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+<!--								  <a data="{$vo.id}" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>-->
+								  <a data="{$vo.id}" class="layui-btn layui-btn-mini layui-btn-normal makeup"><i class="layui-icon">&#xe642;</i>补录</a>
 								  <a  data="{$vo.id}" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
 
 							  </td>
@@ -87,7 +86,7 @@
 					//请求表单
 				 $('.add').click(function(){
 					var url = "{:U('Work/addWork')}";
-					alert(url);
+
 					$.get(url,function(data){
 						if(data.status == 'error'){
 							layer.msg(data.msg,{icon: 5});
@@ -121,18 +120,18 @@
 					})
 				 });
 				
-				//分配角色
-				$('.role').click(function(){
-					var user_id = $(this).attr('data');
-					var url = "{:U('AuthGroup/giveRole')}";
-					$.get(url,{user_id:user_id},function(data){
+				//补录
+				$('.makeup').click(function(){
+                    var mid = $(this).attr('data');
+					var url = "{:U('Work/makeupWork')}";
+					$.get(url,{mid:mid},function(data){
 						if(data.status == 'error'){
 							layer.msg(data.msg,{icon: 5});
 							return;
 						}
 						
 						layer.open({
-							  title:'分配角色',
+							  title:'补录',
 							  type: 1,
 							  skin: 'layui-layer-rim', //加上边框
 							  area: ['500px','500px'], //宽高
@@ -143,14 +142,14 @@
 				
 				//删除
 				$('.del').click(function(){
-					var user_id = $(this).attr('data');
-					var url = "{:U('User/deleteUser')}";
+					var work_id = $(this).attr('data');
+					var url = "{:U('Work/delWork')}";
 					layer.confirm('确定删除吗?', {
 						  icon: 3,
 						  skin: 'layer-ext-moon',
 						  btn: ['确认','取消'] //按钮
 						}, function(){
-							$.post(url,{user_id:user_id},function(data){
+							$.post(url,{work_id:work_id},function(data){
 								if(data.status == 'error'){
 									  layer.msg(data.msg,{icon: 5});//失败的表情
 									  return;

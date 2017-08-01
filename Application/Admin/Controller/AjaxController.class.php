@@ -28,6 +28,72 @@ class AjaxController  extends  Controller
 
     }
     /**
+     * @description:获取公司小组下所有成员
+     * @author wuyanwen(2016年12月1日)
+     */
+    public function getCompanyMember()
+    {
+        I('get.cid')?$where['cid'] =I('get.cid'):'' ;
+        I('get.gid')?$where['gid'] =I('get.gid'):'' ;
+
+        $info =  M('admin_user')->where($where)->field('id,user_name')->select();
+        $data['member_info'] = $info?$info: '';
+        return  $this->ajaxReturn($data);
+
+    }
+    /**
+     * @description:选中某公司小组下成员
+     * @author wuyanwen(2016年12月1日)
+     */
+    public function addCompanyMember()
+    {
+        $type = I('get.type');
+        if($type){
+           //修改成员
+            $checkmember = session('checkmember');
+            $data['company_member'] = $checkmember ? $checkmember['company_member']:'';
+            $data['member_ratio_value'] = $checkmember ? $checkmember['member_ratio_value']:'';
+
+        }else{
+            //添加成员
+            $company_member = I('get.text');
+
+            $member_ratio_value = I('get.member_ratio_value');
+            $company_member = array_filter(explode(',',$company_member));
+            $member_ratio_value = explode(',',$member_ratio_value);
+            $n_company_member = array();
+            foreach ($company_member as $k=>$v){
+                $n_company_member[$k]['id'] = $v;
+                $n_company_member[$k]['user_name'] = M('admin_user')->where('id='.$v)->getField('user_name');
+            }
+            $data['company_member'] = $n_company_member;
+            $data['member_ratio_value'] = $member_ratio_value;
+        }
+        return  $this->ajaxReturn($data);
+
+    }
+    /**
+     * @description:最终选中某公司小组下成员
+     * @author wuyanwen(2016年12月1日)
+     */
+    public function checkCompanyMember()
+    {
+        $company_member = I('get.ctext');
+        $member_ratio_value = I('get.cmember_ratio_value');
+        $company_member = array_filter(explode(',',$company_member));
+        $member_ratio_value = explode(',',$member_ratio_value);
+        $n_company_member = array();
+        foreach ($company_member as $k=>$v){
+            $n_company_member[$k]['id'] = $v;
+            $n_company_member[$k]['user_name'] = M('admin_user')->where('id='.$v)->getField('user_name');
+        }
+        $data['company_member'] = $n_company_member;
+        $data['member_ratio_value'] = $member_ratio_value;
+        session('checkmember',$data);
+        return  $this->ajaxReturn($data);
+
+    }
+    /**
      * @description:导出用户表
      * @author wuyanwen(2016年12月1日)
      */

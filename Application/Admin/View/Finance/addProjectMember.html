@@ -1,0 +1,80 @@
+<form class="layui-form">
+
+
+  <table class="layui-table">
+    <colgroup>
+      <col width="20">
+      <col width="20">
+
+    </colgroup>
+    <thead>
+    <tr>
+      <th><input name=""  lay-filter="allChoose" type="checkbox"></th>
+      <th>姓名</th>
+      <th>项目分账比例</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <foreach name="member_info" item="vo">
+
+    <tr>
+      <td><input name="eid[]" value="{$vo.id}" type="checkbox"></td>
+      <td>{$vo.user_name}</td>
+      <td><input type="text" name="member_ratio[]"></td>
+
+    </tr>
+
+    </foreach>
+
+    </tbody>
+  </table>
+
+
+
+  <input type="hidden" value="{$project_id}" name="pid">
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+
+      <button class="layui-btn" lay-submit lay-filter="member">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+
+
+<script>
+    layui.use('form', function(){
+        var $ = layui.jquery, form = layui.form();
+        //全选
+        form.on('checkbox(allChoose)', function(data){
+            var child = $(data.elem).parents('table').find('tbody input[type="checkbox"]');
+            child.each(function(index, item){
+                item.checked = data.elem.checked;
+            });
+            form.render('checkbox');
+        });
+        //监听提交
+        form.on('submit(member)', function(data){
+
+            var memberInfo = data.field;
+
+            var url = "{:U('Project/addProjectMember')}";
+            $.post(url,memberInfo,function(data){
+                if(data.status == 'error'){
+                    layer.msg(data.msg,{icon: 5});//失败的表情
+                    return;
+                }else if(data.status == 'success'){
+                    layer.msg(data.msg, {
+                        icon: 6,//成功的表情
+                        time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                    }, function(){
+                        location.reload();
+                    });
+                }
+            })
+
+            return false;//阻止表单跳转
+        });
+    });
+</script>

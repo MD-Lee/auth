@@ -11,7 +11,33 @@
 
 	<body>
 		<div class="admin-main">
+			<div class="layui-inline">
+				<form action="<?php echo U('Project/index');?>" method="get">
+					<div class="layui-input-inline">
+						<select name="cid" id="cid">
+							<option value="" selected="selected">请选择公司</option>
+							<?php if(is_array($company_list)): foreach($company_list as $key=>$v): ?><option  value="<?php echo ($v["id"]); ?>" <?php if($cid == $v['id']): ?>selected<?php endif; ?>><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
+						</select>
 
+						<select name="finance_status">
+							<option value="" selected="selected">请选择财务审核状态</option>
+
+							<option  value="0" <?php if($finance_status == 0): ?>selected<?php endif; ?>>未审核</option>
+							<option  value="1" <?php if($finance_status == 1): ?>selected<?php endif; ?>>已分帐</option>
+							<option  value="2" <?php if($finance_status == 2): ?>selected<?php endif; ?>>完工</option>
+						</select>
+						<select name="status">
+							<option value="" selected="selected">请选择项目状态</option>
+
+							<option  value="0" <?php if($status == 0): ?>selected<?php endif; ?>>进行中</option>
+							<option  value="1" <?php if($status == 1): ?>selected<?php endif; ?>>已完工</option>
+
+						</select>
+					</div>
+
+					<input type="submit" class="layui-btn layui-btn-small search_btn"></input>
+				</form>
+			</div>
 			<blockquote class="layui-elem-quote">
 				<button  class="layui-btn layui-btn-small add">
 					<i class="layui-icon">&#xe608;</i> 添加项目
@@ -30,8 +56,10 @@
 					      <th>创建时间</th>
 					      <th>合同金额</th>
 					      <th>工时合计</th>
+					      <th>总成本合计</th>
 					      <th>人工合计</th>
 					      <th>绩效合计</th>
+					      <th>总利润</th>
 					      <th>盈利率</th>
 					      <th>操作</th>
 					    </tr> 
@@ -40,21 +68,23 @@
 					  <?php if(is_array($project_info)): foreach($project_info as $k=>$vo): ?><tr>
 					      <td><?php echo ($vo["id"]); ?></td>
 					      <td><?php echo ($vo["project_name"]); ?></td>
-					      <td><?php echo ($vo["finance_status"]); ?></td>
-					      <td><?php echo ($vo["status"]); ?></td>
+					      <td><?php echo ($vo["finance_status_name"]); ?></td>
+					      <td><?php echo ($vo["status_name"]); ?></td>
 					      <td><?php echo (date("Y-m-d",$vo["create_time"])); ?></td>
 					      <td><?php echo ($vo["money"]); ?></td>
-					      <td><?php echo ($vo["sum_time"]); ?></td>
-					      <td><?php echo ($vo["sum_per"]); ?></td>
-					      <td><?php echo ($vo["sum_achievement"]); ?></td>
-					      <td><?php echo ($vo["profit"]); ?></td>
+					      <td><?php echo ($vo["sum_work_hours"]); ?></td>
+					      <td><?php echo ($vo["sum_cost"]); ?></td>
+					      <td><?php echo ($vo["person_cost"]); ?></td>
+					      <td><?php echo ($vo["sum_ratio"]); ?></td>
+					      <td><?php echo ($vo["sum_profit"]); ?></td>
+					      <td><?php echo ($vo["profit_margin"]); ?></td>
 					      <td>
 
-							<a data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-mini  examine"><i class="layui-icon">&#xe608;</i>审核</a>
-							<a data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>
-							<a  data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
+							  <?php if($vo["finance_status"] == 2): ?><a data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-mini  examine"><i class="layui-icon">&#xe608;</i>审核</a><?php endif; ?>
+						<!--	<a data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+					-->		<a  data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
 
-					      	<a data="<?php echo ($vo["id"]); ?>" class="layui-btn layui-btn-mini member"><i class="layui-icon">&#xe608;</i>成员</a>
+
 					      </td>
 					    </tr><?php endforeach; endif; ?>
 					  </tbody>
@@ -76,82 +106,11 @@
 					$ = layui.jquery;
                     layer = layui.layer;
 					//请求表单
-                //iframe自适应
-                $(window).on('resize', function() {
-                    var $content = $('.admin-nav-card .layui-tab-content');
-                    $content.height($(this).height() - 147);
-                    $content.find('iframe').each(function() {
-                        $(this).height($content.height());
-                    });
-                }).resize();
 
-                //添加tab
-                var $tabs = $('#admin-tab');
-                var $container = $('#admin-tab-container');
-				$('.add').click(function () {
-                    var $this = $(this);
-                    var url = "<?php echo U('Project/addProject');?>";
-                    var iframe = '<iframe src="' + url + '"></iframe>';
-                    var aHtml = $this.html();
-
-                    var count = 0;
-                    var tabIndex;
-                    $tabs.find('li').each(function(i, e) {
-                        var $cite = $(this).children('cite');
-                        alert("3");
-                        if($cite.text() === $this.find('cite').text()) {
-                            count++;
-                            tabIndex = i;
-                        };
-                    });
-
-                    //tab不存在
-                    if(count === 0) {
-                        //添加删除样式
-                        aHtml += '<i class="layui-icon layui-unselect layui-tab-close">&#x1006;</i>';
-                        //添加tab
-                        element.tabAdd('admin-tab', {
-                            title: aHtml,
-                            content: iframe
-                        });
-                        //iframe 自适应
-                        var $content = $('.admin-nav-card .layui-tab-content');
-
-                        $content.find('iframe').each(function() {
-                            $(this).height($content.height());
-                        });
-                        //绑定关闭事件
-                        $tabs = $('#admin-tab');
-                        var $li = $tabs.find('li');
-                        alert($li.length);
-                        $li.eq($li.length - 1).children('i.layui-tab-close').on('click', function() {
-
-                            element.tabDelete('admin-tab', $(this).parent('li').index()).init();
-                        });
-                        //获取焦点
-                        element.tabChange('admin-tab', $li.length - 1);
-
-                    } else {
-                        //切换tab
-                        element.tabChange('admin-tab', tabIndex);
-                    }
-                });
-				/* $('.add').click(function(){
+				$('.add').click(function(){
 					var url = "<?php echo U('Project/addProject');?>";
-					$.get(url,function(data){
-						if(data.status == 'error'){
-							layer.msg(data.msg,{icon: 5});
-							return;
-						}
-						layer.open({
-							  title:'添加项目',
-							  type: 1,
-							  skin: 'layui-layer-rim', //加上边框
-							  area: ['500px'], //宽高
-							  content: data,
-						});
-					})
-				 });*/
+					window.location.href=url;
+				 });
 				//添加项目成员
 
                 $('.member').click(function(){

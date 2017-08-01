@@ -47,15 +47,49 @@ class MemberWorkModel extends BaseModel
     }
     
     /**
-     * @description:添加后台员工
+ * @description:添加工时
+ * @author wuyanwen(2016年12月1日)
+ * @param unknown $data
+ * @return boolean
+ */
+    public function addWork($work_info)
+    {
+
+        $data['uid'] = $work_info['uid'];
+        $data['created_time'] = $work_info['created_time'];
+        foreach ($work_info['pid'] as $k=>$v){
+            $data['pid'] = $v ;
+            $data['work_hours'] = $work_info['work_hours'][$k] ;
+            $data['work_content'] = $work_info['work_content'][$k] ;
+            $is_success = $this->add($data) ? true : false;
+            if($is_success == false) break;
+        }
+        return $is_success;
+    }
+    /**
+     * @description:补录工时
      * @author wuyanwen(2016年12月1日)
      * @param unknown $data
      * @return boolean
      */
-    public function addEmployee($data)
+    public function addMakeupWork($work_info)
     {
-        return $this->add($data) ? true : false;
+
+        $data['mid'] = $work_info['mid'];
+        $data['additional_recording_time'] = $work_info['additional_recording_time'];
+        $data['additional_recording'] = $work_info['additional_recording'];
+        foreach ($work_info['work_hours'] as $k=>$v){
+
+            $data['work_hours'] = $v ;
+            $data['work_content'] = $work_info['work_content'][$k] ;
+
+            $is_success = M('makeup_member_work')->add($data) ? true : false;
+
+            if($is_success == false) break;
+        }
+        return $is_success;
     }
+
     
     /**
      * @description:更新用户信息

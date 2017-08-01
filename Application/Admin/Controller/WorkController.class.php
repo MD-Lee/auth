@@ -47,43 +47,71 @@ class WorkController extends CommonController
         $user_info = session('user_info');
         $uid = $user_info['id'];
         if(IS_POST){
-            
-            $employee_info = array(
-                'name'      => I('post.name','','trim'),
-                'sex'      => I('post.sex','','trim'),
-                'mobile'      => I('post.mobile','','trim'),
-                'wages'      => I('post.wages','','trim'),
-                'cid'      => I('post.cid','','trim'),
-                'gid'      => I('post.gid','','trim'),
-                'auth_type'      => I('post.auth_type','','trim'),
-                'password'       => md5(I('post.password','','trim')),
-                'created_at' => time(),
+            //Array (
+            // [pid] => Array ( [0] => 2 [1] => 2 )
+            // [work_hours] => Array ( [0] => 1 [1] => 3 ) [
+            //work_content] => Array ( [0] => 去 [1] => 订单 )
+
+            $work_info = array(
+                'pid'      => I('post.pid'),
+                'work_hours'      => I('post.work_hours'),
+                'work_content'      => I('post.work_content'),
+                'uid'      => $uid,
+                'created_time'      => time(),
             );
-            
-           if($this->admin_work_model->findAdminemployeeByName($employee_info['employee_name'])){
-               $this->ajaxSuccess('该用户已经被占用');
-           }
-           
-           if($this->admin_work_model->addAdminemployee($employee_info)){
-               $this->ajaxSuccess('添加成功');
+
+           if($this->work_model->addWork($work_info)){
+               $this->success('添加成功');
            }else{
-              $this->ajaxError('添加失败');
+              $this->error('添加失败');
            }
         }else{
             $project_member_model = D('ProjectMember');
             $project_list = $project_member_model->getProjectListByUid($uid);
-
+            print_r($project_list);
+            var_dump(json_encode($project_list));
             $this->assign('project_list', $project_list);
+            $this->assign('project_lists', json_encode($project_list));
             $this->display();
         }
     }
-    
+    public function makeupWork()
+    {
+        $user_info = session('user_info');
+        $uid = $user_info['id'];
+        if(IS_POST){
+            //Array (
+            // [additional_recording_time] => 2017-07-25
+            // [additional_recording] => 333
+            // [work_hours] => Array ( [0] => 5 )
+            // [work_content] => Array ( [0] => 4 )
+            // [mid] => 1 )
+        $work_info = array(
+                'mid'      => I('post.mid'),
+                'additional_recording_time'      => I('post.additional_recording_time'),
+                'additional_recording'      => I('post.additional_recording'),
+                'work_hours'      => I('post.work_hours'),
+                'work_content'      => I('post.work_content'),
+            );
+
+            if($this->work_model->addMakeupWork($work_info)){
+                $this->success('添加成功');
+            }else{
+                $this->error('添加失败');
+            }
+        }else{
+            $mid = I('get.mid','','intval');
+            $this->assign('mid', $mid);
+            $this->display();
+        }
+    }
+
     
     /**
      * @description:编辑用户
      * @author wuyanwen(2016年12月1日)
      */
-    public function editEmployee()
+    public function editWork()
     {            
         if(IS_POST){
             $employee_info = array(
@@ -110,14 +138,14 @@ class WorkController extends CommonController
     
     
     /**
-     * @description:删除用户
+     * @description:删除工时
      * @author wuyanwen(2016年12月1日)
      */
-    public function deleteEmployee()
+    public function delWork()
     {
-        $employee_id = I('post.employee_id','','intval');
+        $work_id = I('post.work_id','','intval');
         
-        $result = $this->admin_work_model->deleteAdminemployee($employee_id);
+        $result = $this->work_model->deleteWork($work_id);
         
         if($result){
             $this->ajaxSuccess("删除成功");
