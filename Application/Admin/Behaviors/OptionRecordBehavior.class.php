@@ -6,7 +6,7 @@ use Admin\Model\AdminMenuModel;
 class OptionRecordBehavior extends \Think\Behavior{
 
     public function run(&$param){
-        if(MODULE_NAME !='Mobile'){
+         if(MODULE_NAME =='Admin'){
             $name = CONTROLLER_NAME . '/' . ACTION_NAME;
 
             /* @var $admin_menu_model \Admin\Model\AdminMenuModel */

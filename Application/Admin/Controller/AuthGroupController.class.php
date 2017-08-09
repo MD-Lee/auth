@@ -138,7 +138,7 @@ class AuthGroupController extends CommonController {
             parent::ajaxSuccess('分配成功!');
         }else{
             $user_id = I('user_id', 0, 'intval');
-            
+
             /* @var $admin_auth_group_model \Admin\Model\AdminAuthGroupModel */
             $admin_auth_group_model = D('AdminAuthGroup');
             $data = $admin_auth_group_model->getGroupList($user_id);

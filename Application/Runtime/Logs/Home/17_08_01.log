@@ -1,0 +1,130 @@
+[ 2017-08-01T11:08:30+08:00 ] 117.185.27.147 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T11:08:30+08:00 ] 140.207.63.102 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T11:08:30+08:00 ] 140.207.185.122 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T11:08:30+08:00 ] 140.207.54.140 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T11:08:30+08:00 ] 140.207.118.16 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T11:08:41+08:00 ] 117.135.173.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T13:54:38+08:00 ] 223.81.192.208 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T19:27:06+08:00 ] 111.161.57.163 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T19:27:06+08:00 ] 111.30.132.190 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-01T19:27:06+08:00 ] 111.30.132.212 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+

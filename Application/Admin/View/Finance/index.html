@@ -1,205 +1,343 @@
 <!DOCTYPE html>
+
 <html>
 
+
+
 <head>
+
 	<meta charset="UTF-8">
+
 	<title>Table</title>
+
 	<link rel="stylesheet" href="__PUBLIC__/plugins/layui/css/layui.css" media="all" />
+
 	<link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+
 	<link rel="stylesheet" href="__PUBLIC__/plugins/font-awesome/css/font-awesome.min.css">
+
 </head>
 
+
+
 <body>
+
 <div class="admin-main">
-	<div class="layui-inline">
-		<form action="{:U('Project/index')}" method="get">
-			<div class="layui-input-inline">
-				<select name="cid" id="cid">
-					<option value="" selected="selected">请选择公司</option>
-					<foreach name="company_list" item="v">
-						<option  value="{$v.id}" <if condition="$cid eq $v['id']">selected</if>>{$v.name}</option>
-					</foreach>
-				</select>
 
-				<select name="finance_status">
-					<option value="" selected="selected">请选择财务审核状态</option>
 
-					<option  value="0" <if condition="$finance_status eq 0">selected</if>>未审核</option>
-					<option  value="1" <if condition="$finance_status eq 1">selected</if>>已分帐</option>
-					<option  value="2" <if condition="$finance_status eq 2">selected</if>>完工</option>
-				</select>
-				<select name="status">
-					<option value="" selected="selected">请选择项目状态</option>
 
-					<option  value="0" <if condition="$status eq 0">selected</if>>进行中</option>
-					<option  value="1" <if condition="$status eq 1">selected</if>>已完工</option>
+	<blockquote class="layui-elem-quote" style="overflow:hidden;">
+        <div class="layui-inline fl">
 
-				</select>
-			</div>
+            <form action="{:U('Project/index')}" method="get">
 
-			<input type="submit" class="layui-btn layui-btn-small search_btn"></input>
-		</form>
-	</div>
-	<blockquote class="layui-elem-quote">
-		<button  class="layui-btn layui-btn-small add">
-			<i class="layui-icon">&#xe608;</i> 添加项目
-		</button>
+                <div class="layui-input-inline">
+
+                    <select class="select_box" name="cid" id="cid">
+
+                        <option value="" selected="selected">请选择公司</option>
+
+                        <foreach name="company_list" item="v">
+
+                            <option  value="{$v.id}" <if condition="$cid eq $v['id']">selected</if>>{$v.name}</option>
+
+                        </foreach>
+
+                    </select>
+
+
+
+                    <select class="select_box" name="finance_status">
+
+                        <option value="" selected="selected">请选择财务审核状态</option>
+
+
+
+                        <option  value="0" <if condition="$finance_status eq 0">selected</if>>未审核</option>
+
+                        <option  value="1" <if condition="$finance_status eq 1">selected</if>>已分帐</option>
+
+                        <option  value="2" <if condition="$finance_status eq 2">selected</if>>完工</option>
+
+                    </select>
+
+                    <select class="select_box" name="status">
+
+                        <option value="" selected="selected">请选择项目状态</option>
+
+
+
+                        <option  value="0" <if condition="$status eq 0">selected</if>>进行中</option>
+
+                        <option  value="1" <if condition="$status eq 1">selected</if>>已完工</option>
+
+
+
+                    </select>
+
+                </div>
+
+
+
+                <input type="submit" class="layui-btn layui-btn-small search_btn"></input>
+
+            </form>
+
+        </div>
+
+
 	</blockquote>
+
 	<fieldset class="layui-elem-field">
+
 		<legend>项目列表</legend>
+
 		<div class="layui-field-box">
+
 			<table class="layui-table">
+
 				<thead>
+
 				<tr>
+
 					<th>序号</th>
+
 					<th>项目名称</th>
+
 					<th>财务审核</th>
+
 					<th>项目状态</th>
+
 					<th>创建时间</th>
+
 					<th>合同金额</th>
+
 					<th>工时合计</th>
+
 					<th>总成本合计</th>
+
 					<th>人工合计</th>
+
 					<th>绩效合计</th>
+
 					<th>总利润</th>
+
 					<th>盈利率</th>
+
 					<th>操作</th>
+
 				</tr>
+
 				</thead>
+
 				<tbody>
+
 				<foreach name="project_info" key="k" item="vo">
+
 					<tr>
+
 						<td>{$vo.id}</td>
+
 						<td>{$vo.project_name}</td>
+
 						<td>{$vo.finance_status_name}</td>
+
 						<td>{$vo.status_name}</td>
+
 						<td>{$vo.create_time|date="Y-m-d",###}</td>
+
 						<td>{$vo.money}</td>
+
 						<td>{$vo.sum_work_hours}</td>
+
 						<td>{$vo.sum_cost}</td>
+
 						<td>{$vo.person_cost}</td>
+
 						<td>{$vo.sum_ratio}</td>
+
 						<td>{$vo.sum_profit}</td>
+
 						<td>{$vo.profit_margin}</td>
+
 						<td>
 
-							<if condition="$vo.finance_status eq 0"><a data="{$vo.id}" class="layui-btn layui-btn-mini  examine"><i class="layui-icon">&#xe608;</i>初审</a></if>
-							<!--	<a data="{$vo.id}" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>
-                        -->		<a  data="{$vo.id}" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
 
+
+							<if condition="$vo.finance_status eq 0"><a data="{$vo.id}" class="layui-btn layui-btn-mini  examine"><i class="layui-icon">&#xe608;</i>初审</a></if>
+							<if condition="$vo.finance_status eq 1 && $vo.status eq 1"><a data="{$vo.id}" class="layui-btn layui-btn-mini  split"><i class="layui-icon">&#xe608;</i>分账</a></if>
+							<if condition="$vo.finance_status eq 2"><a data="{$vo.id}" class="layui-btn layui-btn-mini  sprint"><i class="layui-icon">&#xe608;</i>查看分账单</a></if>
+
+
+
+                        		<a  data="{$vo.id}" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
 
 						</td>
+
 					</tr>
+
 				</foreach>
+
 				</tbody>
+
 			</table>
 
+
+
 		</div>
+
 	</fieldset>
+
 	<div class="admin-table-page">
+
 		<div id="page" class="page">
+
 			{$page}
+
 		</div>
+
 	</div>
+
 </div>
+
 <script type="text/javascript" src="__PUBLIC__/plugins/layui/layui.js"></script>
+
 <script>
-    layui.use(['element','laypage','layer','form'], function() {
+
+    layui.use(['element','laypage','layer'], function() {
+
         var element = layui.element();
+
         var laypage = layui.laypage;
+
         $ = layui.jquery;
+
         layer = layui.layer;
-        //请求表单
 
-        $('.add').click(function(){
-            var url = "{:U('Project/addProject')}";
+
+
+		//分账审核
+
+        $('.split').click(function(){
+            var project_id = $(this).attr('data');
+
+            var url = "/Admin/Finance/splitProject?project_id="+project_id;
+
+
             window.location.href=url;
-        });
-        //添加项目成员
 
-        $('.member').click(function(){
-            var project_id = $(this).attr('data');
-            var url = "{:U('Project/addProjectMember')}";
-            $.get(url,{project_id:project_id},function(data){
-                if(data.status == 'error'){
-                    layer.msg(data.msg,{icon: 5});
-                    return;
-                }
-                layer.open({
-                    title:'添加项目成员',
-                    type: 1,
-                    skin: 'layui-layer-rim', //加上边框
-                    area: ['500px'], //宽高
-                    content: data,
-                });
-            })
         });
-        //编辑项目
-        $('.edit').click(function(){
+        //打印分账单
+        $('.sprint').click(function(){
             var project_id = $(this).attr('data');
-            var url = "{:U('Project/editProject')}";
-            $.get(url,{project_id:project_id},function(data){
-                if(data.status == 'error'){
-                    layer.msg(data.msg,{icon: 5});
-                    return;
-                }
-                layer.open({
-                    title:'编辑项目',
-                    type: 1,
-                    skin: 'layui-layer-rim', //加上边框
-                    area: ['500px'], //宽高
-                    content: data,
-                });
-            })
+
+            var url = "/Admin/Finance/sprintProject?project_id="+project_id;
+
+
+            window.location.href=url;
+
         });
+
+
+
+
 
         //审核
+
         $('.examine').click(function(){
+
             var project_id = $(this).attr('data');
-            var url = "{:U('Project/examineProject')}";
+
+            var url = "{:U('Finance/examineProject')}";
+
             $.get(url,{project_id:project_id},function(data){
+
                 if(data.status == 'error'){
+
                     layer.msg(data.msg,{icon: 5});
+
                     return;
+
                 }
 
+
+
                 layer.open({
+
                     title:'审核',
+
                     type: 1,
+
                     skin: 'layui-layer-rim', //加上边框
-                    area: ['500px','300px'], //宽高
+
+                    area: ['650px','400px'], //宽高
+                    maxmin: true,
                     content: data,
+
                 });
+
             })
+
         });
 
+
+
         //删除
+
         $('.del').click(function(){
+
             var project_id = $(this).attr('data');
+
             var url = "{:U('Project/deleteProject')}";
+
             layer.confirm('确定删除吗?', {
+
                 icon: 3,
+
                 skin: 'layer-ext-moon',
+
                 btn: ['确认','取消'] //按钮
+
             }, function(){
+
                 $.post(url,{project_id:project_id},function(data){
+
                     if(data.status == 'error'){
+
                         layer.msg(data.msg,{icon: 5});//失败的表情
+
                         return;
+
                     }else{
+
                         layer.msg(data.msg, {
+
                             icon: 6,//成功的表情
+
                             time: 2000 //2秒关闭（如果不配置，默认是3秒）
+
                         }, function(){
+
                             location.reload();
+
                         });
+
                     }
+
                 })
+
             });
+
         })
 
+
+
     });
+
 </script>
+
 </body>
+
+
 
 </html>

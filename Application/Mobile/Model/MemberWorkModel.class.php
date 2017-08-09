@@ -57,84 +57,33 @@ class MemberWorkModel extends BaseModel
      */
     public function addMakeupWork($work_info)
     {
+
+
         $where['uid'] = $work_info['uid'];
         $where['pid'] =  $work_info['pid'];
-        $mid = M('member_work')->where($where)->getField('id');
-        $data['mid'] = $mid ;
+        $data['type'] = 1; //工时记录类型  0正常  1补录
         $data['additional_recording_time'] = $work_info['additional_recording_time'];
         $data['additional_recording'] = $work_info['additional_recording'];
-
-
-            $data['work_hours'] = $work_info['work_hours'];
-            $data['work_content'] = $work_info['work_content'] ;
-
-            $is_success = M('makeup_member_work')->add($data) ? true : false;
-
-
-
+        $data['work_hours'] = $work_info['work_hours'];
+        $data['work_content'] = $work_info['work_content'] ;
+        $is_success = $this->add($data) ? true : false;
         return $is_success;
     }
 
     
-    /**
-     * @description:更新用户信息
-     * @author wuyanwen(2016年12月1日)
-     * @param unknown $data
-     */
-    public function editEmployee($data)
-    {
-        $where = array(
-            'id'    => $data['id'],
-        );
 
-        unset($data['id']);
-        
-        return $this->where($where)->save($data);
-    }
+
     
     /**
-     * @description:删除用户
-     * @author wuyanwen(2016年12月1日)
-     * @param unknown $employee_id
-     * @return Ambigous <boolean, unknown>
-     */
-    public function deleteAdminemployee($employee_id)
-    {
-        $where = array(
-            'id' => $employee_id,            
-        );
-        
-        $data = array(
-            'status' => parent::DEL_STATUS,
-        );
-        
-        return $this->where($where)->save($data);
-    }
-    
-    
-    /**
-     * @description:根据id查询用户
+     * @description:根据id查询工时详情
      * @author wuyanwen(2016年12月1日)
      * @param unknown $employee_id
      */
-    public function findAdminemployeeById($employee_id)
+    public function findWorkById($where)
     {
-        $where = array(
-            'id'     => $employee_id,
-            'status' => parent::NORMAL_STATUS,
-        );
-        
-        return $this->where($where)->find();
+        $wrok_detail = $this->where($where)->find();
+        $wrok_detail['project_name'] = M('project')->where('id='.$wrok_detail['pid'])->getField('project_name');
+        return $wrok_detail;
     }
-    
-    public function findAdminemployeeByName($employee_name)
-    {
-        $where = array(
-            'employee_name' => $employee_name,
-            'status'    => parent::NORMAL_STATUS,
-        );
-        
-        
-        return $this->where($where)->find();
-    }
+
 }

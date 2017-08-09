@@ -18,7 +18,7 @@ class IndexController extends CommonController {
 
         $work_info = $this->work_model->selectAllWrok($where);
 
-        $this->work_model->getLastSql();
+        //echo D('MemberWork')->getLastSql();
         $this->assign('work_info',$work_info);
         $this->display();
     }
@@ -58,6 +58,24 @@ class IndexController extends CommonController {
             $this->display();
         }
     }
+
+    //工时详情
+    public function  detailWork(){
+        $member_work_id = I('id');
+        $work_model = D('MemberWork');
+
+        $this->work_model = $work_model;
+
+        $user_info = session('user_info');
+        $where['uid'] = $user_info['id'];
+        $where['id'] = $member_work_id;
+        $work_info_detail = $this->work_model->findWorkById($where);
+        $this->assign('work_info_detail', $work_info_detail);
+
+        $this->display();
+    }
+
+    //补录
     public function makeupWork()
     {
         $user_info = session('user_info');

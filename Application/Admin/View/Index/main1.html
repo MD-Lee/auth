@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_jqgrid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:02 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/plugins/h+/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+	<link href="__PUBLIC__/plugins/h+/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+	<!-- jqgrid-->
+	<link href="__PUBLIC__/plugins/h+/css/plugins/jqgrid/ui.jqgridffe4.css?0820" rel="stylesheet">
+
+	<link href="__PUBLIC__/plugins/h+/css/animate.min.css" rel="stylesheet">
+	<link href="__PUBLIC__/plugins/h+/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+
+	<style>
+		/* Additional style to fix warning dialog position */
+		#alertmod_table_list_2 {
+			top: 900px !important;
+		}
+	</style>
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content  animated fadeInRight">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="ibox ">
+
+				<div class="ibox-content">
+					<hr>
+
+					<h4 class="m-t">个人分账</h4>
+
+					<table>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+					</table>
+					<p>&nbsp;</p>
+					<h4 class="m-t">项目统计</h4>
+
+
+					<div class="jqGrid_wrapper">
+						<table id="table_list_2"></table>
+						<div id="pager_list_2"></div>
+					</div>
+
+					<p>&nbsp;</p>
+					<h4 class="m-t">公司统计</h4>
+
+
+					<div class="jqGrid_wrapper">
+						<table id="table_list_3"></table>
+						<div id="pager_list_3"></div>
+					</div>
+
+					<p>&nbsp;</p>
+					<h4 class="m-t">总工时统计</h4>
+					<for>
+
+					<div class="jqGrid_wrapper">
+						<table id="table_list_4"></table>
+						<div id="pager_list_4"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	<div id="main" style="height:400px"></div>
+
+</div>
+
+
+
+
+<script src="__PUBLIC__/plugins/h+/js/jquery.min.js?v=2.1.4"></script>
+<script src="__PUBLIC__/plugins/h+/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="__PUBLIC__/plugins/h+/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="__PUBLIC__/plugins/h+/js/plugins/jqgrid/i18n/grid.locale-cnffe4.js?0820"></script>
+<script src="__PUBLIC__/plugins/h+/js/plugins/jqgrid/jquery.jqGrid.minffe4.js?0820"></script>
+<script src="__PUBLIC__/plugins/h+/js/content.min.js?v=1.0.0"></script>
+
+
+<script>
+    $(document).ready(function() {
+        $.jgrid.defaults.styleUI = "Bootstrap";
+        var mydata = [{
+            user_name: "隔壁老王",
+            company_name: "九星",
+            group_name: "test",
+            sum_work_hours: "10",
+            sum_person_cost: "10.00",
+            sum_split: "2111.00"
+        },{
+            user_name: "隔壁老李",
+            company_name: "九星1",
+            group_name: "test2",
+            sum_work_hours: "4",
+            sum_person_cost: "50.00",
+            sum_split: "7111.00"
+        }
+            ];
+        $("#table_list_1").jqGrid({
+            data: mydata,
+            datatype: "local",
+            height: 250,
+            autowidth: true,
+            shrinkToFit: true,
+            rowNum: 14,
+            rowList: [10, 20, 30],
+            colNames: ["参与人", "所属公司", "所属小组", "工时", "人工成本", "分账"],
+            colModel: [
+                {
+                name: "user_name",
+                index: "user_name",
+                width: 100
+           		 },
+                {
+                    name: "company_name",
+                    index: "company_name",
+                    width: 90
+                },
+                {
+                    name: "group_name",
+                    index: "group_name",
+                    width: 100
+                },
+                {
+                    name: "sum_work_hours",
+                    index: "sum_work_hours",
+                    width: 80,
+                    sorttype: "int",
+                    formatter: "number"
+                },
+                {
+                    name: "sum_person_cost",
+                    index: "sum_person_cost",
+                    width: 80,
+                    sorttype: "float"
+                },
+                {
+                    name: "sum_split",
+                    index: "sum_split",
+                    width: 80,
+                    sorttype: "float"
+                }],
+           // pager: "#pager_list_1",
+            viewrecords: true,
+            caption: "个人分账",
+            hidegrid: false
+        });
+        $("#table_list_2").jqGrid({
+            data: mydata,
+            datatype: "local",
+            height: 250,
+            autowidth: true,
+            shrinkToFit: true,
+            rowNum: 14,
+            rowList: [10, 20, 30],
+            colNames: ["序号", "项目名称","财务审核","项目状态","创建日期", "合同额", "工时合计","总成本","绩效合计","盈利率"],
+            colModel: [{
+                name: "id",
+                index: "id",
+                width: 60,
+                sorttype: "int"
+            },
+                {
+                    name: "project_name",
+                    index: "project_name",
+                    width: 90
+
+                },
+                {
+                    name: "name",
+                    index: "name",
+                    width: 100
+                },
+                {
+                    name: "finance_status",
+                    index: "finance_status",
+                    width: 80,
+                    sorttype: "int",
+
+                },
+                {
+                    name: "project_status",
+                    index: "project_status",
+                    width: 80,
+                    sorttype: "int",
+
+                },
+                {
+                    name: "create_time",
+                    index: "create_time",
+                    width: 90,
+                    sorttype: "date",
+                    formatter: "date"
+                },
+                {
+                    name: "agreement_money",
+                    index: "float",
+                    width: 90,
+                    sorttype: "float",
+                    formatter: "number"
+                },
+                {
+                    name: "sum_work_hours",
+                    index: "sum_work_hours",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "sum_cost",
+                    index: "sum_cost",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "sum_achievements",
+                    index: "sum_achievements",
+                    width: 80,
+                    sorttype: "float"
+                },
+                {
+                    name: "profit_rate",
+                    index: "profit_rate",
+                    width: 80,
+                    sorttype: "float"
+                }],
+            //pager: "#pager_list_2",
+            viewrecords: true,
+            caption: "项目统计",
+            hidegrid: false
+        });
+        $("#table_list_3").jqGrid({
+            data: mydata,
+            datatype: "local",
+            height: 250,
+            autowidth: true,
+            shrinkToFit: true,
+            rowNum: 14,
+            rowList: [10, 20, 30],
+            colNames: [ "项目名称","合同总额","满荷工时", "申报工时","闲余工时","人工成本", "运营成本", "绩效合计","盈利率"],
+            colModel: [{
+                name: "project_name",
+                index: "name",
+                width: 60,
+
+            },
+                {
+                    name: "agreement_sum_money",
+                    index: "float",
+                    width: 90,
+                    sorttype: "float",
+                    formatter: "number"
+                },
+                {
+                    name: "fullcharging_work_hours",
+                    index: "fullcharging_work_hours",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "declare_work_hours",
+                    index: "declare_work_hours",
+                    width: 80,
+                    sorttype: "int"
+                },
+                {
+                    name: "spare_work_hours",
+                    index: "spare_work_hours",
+                    width: 80,
+                    sorttype: "int"
+                },
+                {
+                    name: "sum_person_cost",
+                    index: "sum_person_cost",
+                    width: 80,
+                    sorttype: "float"
+                },
+                {
+                    name: "sum_operate_cost",
+                    index: "sum_operate_cost",
+                    width: 80,
+                    sorttype: "float"
+                },
+                {
+                    name: "sum_achievements",
+                    index: "sum_achievements",
+                    width: 80,
+                    sorttype: "float"
+                },
+                {
+                    name: "profit_rate",
+                    index: "profit_rate",
+                    width: 80,
+                    sorttype: "float"
+                }
+                ],
+            //pager: "#pager_list_2",
+            viewrecords: true,
+            caption: "公司统计",
+            hidegrid: false
+        });
+        $("#table_list_4").jqGrid({
+            data: mydata,
+            datatype: "local",
+            height: 250,
+            autowidth: true,
+            shrinkToFit: true,
+            rowNum: 14,
+            rowList: [10, 20, 30],
+            colNames: [ "员工","1月","2月", "3月","4月","5月", "6月", "7月","8月","9月","10月","11月","12月"],
+            colModel: [{
+                name: "name",
+                index: "name",
+                width: 60,
+                sorttype: "int"
+            },
+                {
+                    name: "january",
+                    index: "january",
+                    width: 90,
+                    sorttype: "int",
+
+                },
+                {
+                    name: "february",
+                    index: "february",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "march",
+                    index: "march",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "april",
+                    index: "april",
+                    width: 80,
+                    sorttype: "int"
+                },
+                {
+                    name: "may",
+                    index: "may",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "june",
+                    index: "june",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "july",
+                    index: "july",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "august",
+                    index: "august",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "september",
+                    index: "september",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "october",
+                    index: "october",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "november",
+                    index: "november",
+                    width: 100,
+                    sorttype: "int",
+                },
+                {
+                    name: "december",
+                    index: "december",
+                    width: 100,
+                    sorttype: "int",
+                }
+                ],
+            //pager: "#pager_list_2",
+            viewrecords: true,
+            caption: "总工时统计表",
+            hidegrid: false
+        });
+        $(window).bind("resize",
+            function() {
+                var width = $(".jqGrid_wrapper").width();
+                $("#table_list_1").setGridWidth(width);
+                $("#table_list_2").setGridWidth(width);
+                $("#table_list_3").setGridWidth(width);
+                $("#table_list_4").setGridWidth(width);
+
+            })
+    });
+    </script>
+<!-- ECharts单文件引入 -->
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+
+    // 使用
+    require(
+        [
+            'echarts',
+            'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+        ],
+        function (ec) {
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = ec.init(document.getElementById('main'));
+
+            var option = {
+                tooltip: {
+                    show: true
+                },
+                legend: {
+                    data:['销量']
+                },
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        "name":"销量",
+                        "type":"bar",
+                        "data":[5, 20, 40, 10, 10, 20]
+                    }
+                ]
+            };
+
+            // 为echarts对象加载数据
+            myChart.setOption(option);
+        }
+    );
+</script>
+</body>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/table_jqgrid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:20:02 GMT -->
+</html>

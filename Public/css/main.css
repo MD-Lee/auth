@@ -1,9 +1,75 @@
 .admin-main{
+
 	margin: 15px;
+
 }
+
 .admin-main .layui-field-title .layui-field-box{
+
 	padding: 10px 30px;
+
 }
+
 .admin-main .layui-field-title .layui-field-box p{
+
 	padding: 5px 0;
+
 }
+
+/*首页*/
+.member_ul{ overflow:hidden; margin:30px 15px 0px 0; border-left:1px solid #e2e2e2;}
+.member_ul li{ float:left; min-width: 65px; text-align:center;}
+.member_ul li a{ padding:10px 15px; display:block; color:#333; border-radius:6px 6px 0 0; border:1px solid #e2e2e2; border-bottom:0; margin:0 0 0 -1px;}
+.member_ul li a.current{ background:#05a7a5; color:#fff;}
+.member_info{ border:1px solid #e2e2e2; min-height:350px; display:none; margin:0 0 0 1px; border-radius:3px; padding:10px;}
+.mar_r_10{ margin:0 10px 0 0;}
+.search_result{ background:#f0f9de; padding:10px 0; text-indent:10px;}
+.p_title{ background:#687b8c; color:#fff; padding:10px; font-size:18px; text-align:center; margin:15px 10px;}
+.rollBox {
+	width:272px;
+	overflow:hidden;
+	padding:12px 0 5px 6px;
+	margin:auto;
+}
+.rollBox .LeftBotton {
+	height:52px;
+	width:19px;
+	background:url(/Public/images/left_arrow.png) no-repeat center center;
+	overflow:hidden;
+	float:left;
+	display:inline;
+	margin:5px 0 0 0;
+	cursor:pointer;
+}
+.rollBox .RightBotton {
+	height:52px;
+	width:20px;
+	background:url(/Public/images/right_arrow.png) no-repeat center center;
+	overflow:hidden;
+	float:right;
+	display:inline;
+	margin:5px 0 0 0;
+	cursor:pointer;
+}
+.rollBox .Cont {
+	width:232px;
+	overflow:hidden;
+	float:left;
+}
+.rollBox .ScrCont {
+	width:10000000px;
+}
+.rollBox .Cont .pic {
+	width:212px;
+	margin:10px 10px 0 10px;
+	float:left;
+	text-align:center;
+	font-size:18px;
+	border:1px solid #ccc;
+	height:40px;
+	line-height:40px;
+}
+.rollBox #List1,.rollBox #List2 {
+	float:left;
+} 
+

@@ -1,0 +1,36 @@
+[ 2017-08-02T17:08:40+08:00 ] 223.81.192.208 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-02T18:03:21+08:00 ] 140.205.201.41 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-02T18:04:01+08:00 ] 140.205.201.41 /extensions/kindeditor/themes/default/default.png)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+NOTIC: [2] preg_replace(): Compilation failed: unmatched parentheses at offset 5 /home/wwwroot/ygjx.9xgk.com/ThinkPHP/Library/Think/Dispatcher.class.php 第 127 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载控制器:Kindeditor
+

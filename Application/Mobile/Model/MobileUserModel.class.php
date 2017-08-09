@@ -18,8 +18,7 @@ class MobileUserModel extends BaseModel
         );
         
         $result = $this->where($where)->find();
-        print_r($result);
-        die;
+
         return $result;
     }
     

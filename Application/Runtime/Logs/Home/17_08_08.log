@@ -1,0 +1,46 @@
+[ 2017-08-08T09:13:28+08:00 ] 223.81.192.160 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+INFO: [ action_begin ] --START--
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+ERR: 1146:Table '9xgk_ygjx.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-08-08T10:00:48+08:00 ] 223.81.192.160 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000289s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-08-08T19:53:35+08:00 ] 223.81.193.172 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000330s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000377s ]
+
+[ 2017-08-08T21:55:11+08:00 ] 223.81.193.172 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000278s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+

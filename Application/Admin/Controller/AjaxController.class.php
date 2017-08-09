@@ -47,20 +47,74 @@ class AjaxController  extends  Controller
      */
     public function addCompanyMember()
     {
-        $type = I('get.type');
+
+        $type = I('get.type');//1 修改小组成员 0 添加小组成员
         if($type){
-           //修改成员
-            $checkmember = session('checkmember');
-            $data['company_member'] = $checkmember ? $checkmember['company_member']:'';
-            $data['member_ratio_value'] = $checkmember ? $checkmember['member_ratio_value']:'';
+            $project_id = I('get.project_id');
+            $gdata['company_member']='';
+            $gdata['member_ratio_value']='';
+            if($project_id){
+                $project_info =  D('Project')->findProjectById($project_id);
+                $project_member = $project_info['project_member'];
+
+                $gdata ='';
+                foreach ($project_member as $k=>$v){
+                    $gdata['company_member'][$k]['id'] = $v['eid'];
+                    $gdata['company_member'][$k]['user_name'] = $v['user_name'];
+                    $gdata['member_ratio_value'][$k] = $v['member_ratio'];
+                }
+                //修改成员
+
+                if(session('checkmember')){
+                    $checkmember = session('checkmember');
+                    $data['company_member'] =$checkmember['company_member'];
+                    $data['member_ratio_value'] =$checkmember['member_ratio_value'];
+                    /*if(empty($first_member['ptype'])){
+                        $data['company_member'] = array_merge($first_member['company_member'],$gdata['company_member']);
+                        $data['member_ratio_value'] = array_merge($first_member['member_ratio_value'],$gdata['member_ratio_value']);
+                    }*/
+
+                }else{
+                    $data['company_member'] =$gdata['company_member'];
+                    $data['member_ratio_value'] =$gdata['member_ratio_value'];
+                }
+
+            }
+
+           if(session('checkmember')&& empty($project_id)){
+               $first_member = session('checkmember');
+                $data['company_member'] =$first_member['company_member'];
+                $data['member_ratio_value'] =$first_member['member_ratio_value'];
+            }
+
 
         }else{
-            //添加成员
-            $company_member = I('get.text');
 
-            $member_ratio_value = I('get.member_ratio_value');
+            /*编辑或者审核时存在的成员*/
+            $project_id = I('get.project_id');
+            if($project_id){
+                $project_info =  D('Project')->findProjectById($project_id);
+                $project_member = $project_info['project_member'];
+                $gdata ='';
+                if($project_member){
+
+                    foreach ($project_member as $k=>$v){
+                        $gdata['company_member'][$k]['id'] = $v['eid'];
+                        $gdata['company_member'][$k]['user_name'] = $v['user_name'];
+                        $gdata['member_ratio_value'][$k] = $v['member_ratio'];
+                    }
+                }
+
+            }
+            //添加成员
+
+            $company_member = I('get.text');//成员ID
+            $member_ratio_value = I('get.member_ratio_value');//成员分成比例
+
             $company_member = array_filter(explode(',',$company_member));
-            $member_ratio_value = explode(',',$member_ratio_value);
+            $member_ratio_value = substr($member_ratio_value,0,-1);
+            $member_ratio_value =explode(',',$member_ratio_value);
+
             $n_company_member = array();
             foreach ($company_member as $k=>$v){
                 $n_company_member[$k]['id'] = $v;
@@ -68,7 +122,31 @@ class AjaxController  extends  Controller
             }
             $data['company_member'] = $n_company_member;
             $data['member_ratio_value'] = $member_ratio_value;
+
+
+            if(session('first_member')){
+
+                $first_member = session('first_member');
+                $data['company_member'] = array_merge($n_company_member,$first_member['company_member']);
+                $data['member_ratio_value'] = array_merge($member_ratio_value,$first_member['member_ratio_value']);
+            }
+            if(session('checkmember')&& empty(session('first_member'))){
+
+                $checkmember = session('checkmember');
+                $data['company_member'] = array_merge($n_company_member,$checkmember['company_member']);
+                $data['member_ratio_value'] = array_merge($member_ratio_value,$checkmember['member_ratio_value']);
+            }
+
+            if($project_id && $gdata){
+
+                $data['company_member'] = array_merge($data['company_member'],$gdata['company_member']);
+                $data['member_ratio_value'] = array_merge($data['member_ratio_value'],$gdata['member_ratio_value']);
+                $data['ptype'] = 1;
+
+            }
+            session('first_member',$data);
         }
+
         return  $this->ajaxReturn($data);
 
     }
@@ -81,7 +159,8 @@ class AjaxController  extends  Controller
         $company_member = I('get.ctext');
         $member_ratio_value = I('get.cmember_ratio_value');
         $company_member = array_filter(explode(',',$company_member));
-        $member_ratio_value = explode(',',$member_ratio_value);
+        $member_ratio_value = substr($member_ratio_value,0,-1);
+        $member_ratio_value =explode(',',$member_ratio_value);
         $n_company_member = array();
         foreach ($company_member as $k=>$v){
             $n_company_member[$k]['id'] = $v;
@@ -90,6 +169,7 @@ class AjaxController  extends  Controller
         $data['company_member'] = $n_company_member;
         $data['member_ratio_value'] = $member_ratio_value;
         session('checkmember',$data);
+        session('first_member',null);
         return  $this->ajaxReturn($data);
 
     }

@@ -68,8 +68,8 @@ class WorkController extends CommonController
         }else{
             $project_member_model = D('ProjectMember');
             $project_list = $project_member_model->getProjectListByUid($uid);
-            print_r($project_list);
-            var_dump(json_encode($project_list));
+
+
             $this->assign('project_list', $project_list);
             $this->assign('project_lists', json_encode($project_list));
             $this->display();
@@ -83,15 +83,18 @@ class WorkController extends CommonController
             //Array (
             // [additional_recording_time] => 2017-07-25
             // [additional_recording] => 333
+            //[pid] => Array ( [0] => 2 [1] => 2 )
             // [work_hours] => Array ( [0] => 5 )
             // [work_content] => Array ( [0] => 4 )
             // [mid] => 1 )
         $work_info = array(
-                'mid'      => I('post.mid'),
+
+                'pid'      => I('post.pid'),
                 'additional_recording_time'      => I('post.additional_recording_time'),
                 'additional_recording'      => I('post.additional_recording'),
                 'work_hours'      => I('post.work_hours'),
                 'work_content'      => I('post.work_content'),
+                'uid'      => $uid,
             );
 
             if($this->work_model->addMakeupWork($work_info)){
@@ -100,8 +103,10 @@ class WorkController extends CommonController
                 $this->error('添加失败');
             }
         }else{
-            $mid = I('get.mid','','intval');
-            $this->assign('mid', $mid);
+            $project_member_model = D('ProjectMember');
+            $project_list = $project_member_model->getProjectListByUid($uid);
+            $this->assign('project_list', $project_list);
+            $this->assign('project_lists', json_encode($project_list));
             $this->display();
         }
     }

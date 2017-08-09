@@ -45,7 +45,54 @@ class MemberWorkModel extends BaseModel
         return array('page' => $show , 'list' => $list);
     
     }
-    
+    /**
+     * @description:首页获取总工时列表
+     * @author wuyanwen(2016年12月1日)
+     * @param unknown $num
+     * @return multitype:unknown string
+     */
+
+    public function getAllWrokMember($where=''){
+        $where['g.group_id'] = array('neq',27);//员工id 非超级管理员
+        $work_member =  M('admin_user')->alias('a')
+            ->join('admin_auth_group_access as g on a.id=g.uid')
+            ->join('company as c on a.cid=c.id')
+            ->join('company_group as cg on a.gid=cg.id')
+            ->where($where)->field('a.user_name,a.id,a.wages,c.name,cg.group_name,a.wages')->select();
+        return $work_member;
+    }
+
+
+    public function getMemberWorkHours($where){
+        $work_hours = $this->where($where)->sum('work_hours');
+        return $work_hours;
+    }
+    //个人分账
+
+    public function getPersonSplitWorkHours($where){
+        //总工时
+        $work_hours =  M('member_work')->alias('mw')
+            ->join('project as p on mw.pid=p.id')
+            ->where($where)->field('sum(mw.work_hours) as work_hours')->find();
+
+        return $work_hours['work_hours'];
+    }
+    public function getPersonSplit($where){
+
+       $person_split =  M('project_member')->alias('pm')
+            ->join('project as p on pm.pid=p.id')
+            ->where($where)->field('p.money,p.achievements_ratio,pm.member_ratio')->select();
+       $split_money = '';
+       foreach ($person_split as $v){
+        $split_money +=round(($v['money']*$v['achievements_ratio']*$v['member_ratio']/10000),2);
+       }
+        return $split_money;
+
+
+    }
+
+
+
     /**
  * @description:添加工时
  * @author wuyanwen(2016年12月1日)
@@ -74,17 +121,16 @@ class MemberWorkModel extends BaseModel
      */
     public function addMakeupWork($work_info)
     {
-
-        $data['mid'] = $work_info['mid'];
-        $data['additional_recording_time'] = $work_info['additional_recording_time'];
+        $data['uid'] = $work_info['uid'];
+        $data['created_time'] = time();
+        $data['additional_recording_time'] = strtotime($work_info['additional_recording_time']);
         $data['additional_recording'] = $work_info['additional_recording'];
+        $data['type'] = 1; //工时记录类型  0正常  1补录
         foreach ($work_info['work_hours'] as $k=>$v){
-
             $data['work_hours'] = $v ;
             $data['work_content'] = $work_info['work_content'][$k] ;
-
-            $is_success = M('makeup_member_work')->add($data) ? true : false;
-
+            $data['pid'] = $work_info['pid'][$k] ;
+            $is_success = $this->add($data) ? true : false;
             if($is_success == false) break;
         }
         return $is_success;
@@ -152,4 +198,6 @@ class MemberWorkModel extends BaseModel
         
         return $this->where($where)->find();
     }
+
+
 }

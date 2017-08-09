@@ -43,7 +43,7 @@ class UserController extends CommonController
     public function addUser()
     {
         if(IS_POST){
-            
+            $is_edit = I('is_edit');
             $user_info = array(
                 'user_name'      => I('post.user_name','','trim'),
                 'mobile'      => I('post.mobile','','trim'),
@@ -51,28 +51,59 @@ class UserController extends CommonController
                 'sex'      => I('post.sex','','trim'),
                 'create_time'      => I('post.create_time'),
                 'cid'      => I('post.cid','','trim'),
+                'gid'      => I('post.gid','','trim'),
+                'group_id'      => I('post.group_id','','trim'),
                 'password'       =>I('post.password','','trim')? md5(I('post.password','','trim')):md5('666666'),
                 'tpassword'       => I('post.password','','trim')?I('post.password','','trim'):'666666',
                 'lastlogin_time' => time(),
             );
-            
-           if($this->admin_user_model->findAdminUserByName($user_info['user_name'])){
-               $this->ajaxSuccess('该用户已经被占用');
-           }
+            if(empty($is_edit)){
+                if($this->admin_user_model->findAdminUserByName($user_info['user_name'])){
+                    $this->ajaxSuccess('该用户已经被占用');
+                }
+                if($this->admin_user_model->addAdminUser($user_info)){
+                    $this->ajaxSuccess('添加成功');
+                }else{
+                    $this->ajaxError('添加失败');
+                }
+            }else{
+                $user_info['id'] =  I('post.id','','intval');
+                if($this->admin_user_model->editAdminUser($user_info) !== false){
+                    $this->ajaxSuccess('更新成功');
+                }else{
+                    $this->ajaxError('更新失败');
+                }
+            }
 
-           if($this->admin_user_model->addAdminUser($user_info)){
-               $this->ajaxSuccess('添加成功');
-           }else{
-              $this->ajaxError('添加失败');
-           }
+
+
         }else{
+            /**/
+            $user_info = '';
+            $is_edit = '';
+            $user_id = I('get.user_id','','intval');
+            if($user_id ){
+                $user_info = $this->admin_user_model->findAdminUserById($user_id);
+                $is_edit = 1;//是否是编辑
+            };
+
+
+            /*权限*/
+            /* @var $admin_auth_group_model \Admin\Model\AdminAuthGroupModel */
+            $admin_auth_group_model = D('AdminAuthGroup');
+            $data = $admin_auth_group_model->getGroupList();
+            $company_list =  $this->admin_user_model->findAllCompany();
+            $this->assign('company_list',$company_list);
+            $this->assign('list', $data['list']);
+            $this->assign('user_info',$user_info);//用户信息
+            $this->assign('is_edit',$is_edit);//用户信息
             $this->display();
         }
     }
     
     
     /**
-     * @description:编辑用户
+     * @description:编辑用户（取消和添加合并）
      * @author wuyanwen(2016年12月1日)
      */
     public function editUser()

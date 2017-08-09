@@ -71,7 +71,27 @@ class AdminUserModel extends BaseModel
      */
     public function addAdminUser($data)
     {
-        return $this->add($data) ? true : false;
+        $user_id  = $this->add($data);
+        $group_id = $data['group_id'];
+
+        //html_entity_decode($string)
+        /* @var $admin_auth_group_model \Admin\Model\AdminAuthGroupModel */
+        $admin_auth_group_access_model = D('AdminAuthGroupAccess');
+
+        if(!empty($group_id)){
+
+            //删除原有角色
+            $admin_auth_group_access_model->where(array('uid'=>$user_id))->delete();
+                $add_data = array(
+                    'uid' => $user_id,
+                    'group_id' => $group_id,
+                );
+
+                $admin_auth_group_access_model->add($add_data);
+
+        }
+
+        return $user_id ? true : false;
     }
     
     /**
@@ -84,9 +104,23 @@ class AdminUserModel extends BaseModel
         $where = array(
             'id'    => $data['id'],
         );
+        $group_id = $data['group_id'];
+        if(!empty($group_id)){
+            /* @var $admin_auth_group_model \Admin\Model\AdminAuthGroupModel */
+            $admin_auth_group_access_model = D('AdminAuthGroupAccess');
+            if($admin_auth_group_access_model->where(array('uid'=>$data['id']))->find()){
+                $admin_auth_group_access_model->where(array('uid'=>$data['id']))->setField('group_id', $group_id);
+            }else{
+                $add_data = array(
+                    'uid' => $data['id'],
+                    'group_id' => $group_id,
+                );
 
-        unset($data['id']);
-        
+                $admin_auth_group_access_model->add($add_data);
+            }
+
+        }
+
         return $this->where($where)->save($data);
 
     }
@@ -122,8 +156,9 @@ class AdminUserModel extends BaseModel
             'id'     => $user_id,
             'status' => parent::NORMAL_STATUS,
         );
-        
-        return $this->where($where)->find();
+        $user_info = $this->where($where)->find();
+        $user_info['group_id'] = M('admin_auth_group_access')->where('uid='.$user_id)->getField('group_id');
+        return $user_info;
     }
     
     public function findAdminUserByName($user_name)
@@ -141,7 +176,7 @@ class AdminUserModel extends BaseModel
         $where = array(
             'gid' => $project_info['gid'],
             'cid'    => $project_info['cid'],
-            'status'    => parent::NORMAL_STATUS,
+
         );
         return $this->where($where)->select();
     }

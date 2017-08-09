@@ -33,6 +33,11 @@ class ConfigController extends CommonController
             }
         }else{
             $config_info = $this->config_model->findConfig();
+
+            /*$lee = str_replace('合同额',10000,$config_info);
+            $result=eval("return $lee;");
+            echo $result;*/
+
             $this->assign('config_info',$config_info);
             $this->display();
         }

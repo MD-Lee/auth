@@ -1,0 +1,11 @@
+[ 2017-08-09T09:25:23+08:00 ] 223.81.193.172 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000859s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000932s ]
+

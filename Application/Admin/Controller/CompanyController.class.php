@@ -26,6 +26,8 @@ class CompanyController extends CommonController
 
         $company_info = $this->company_model->selectAllCompany();
         $company_info = $this->company_group_model->getAllCompanyGroupById($company_info);
+
+
         $this->assign('company_info',$company_info['list']);
         $this->assign('page',$company_info['page']);
         $this->display();
@@ -116,7 +118,7 @@ class CompanyController extends CommonController
 
             );
             if($this->company_group_model->findCompanyGroupByName($group_info)){
-                $this->ajaxSuccess('该公司小组已添加');
+                $this->ajaxError('该公司小组已添加');
             }
 
             if($this->company_group_model->addCompanyGroup($group_info)){

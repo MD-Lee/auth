@@ -1,0 +1,2097 @@
+[ 2017-08-05T12:55:44+08:00 ] 223.81.193.55 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0233s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.029849s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.029936s ]
+
+[ 2017-08-05T12:55:44+08:00 ] 223.81.193.55 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Login/login' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006120s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-08-05T12:55:44+08:00 ] 223.81.193.55 /index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Login/verify' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006139s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-08-05T12:55:49+08:00 ] 223.81.193.55 /index.php/Admin/Login/verify.html?0.3295934955889308
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Login/verify' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006359s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-08-05T12:55:54+08:00 ] 223.81.193.55 /index.php/Admin/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Login/doLogin' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006364s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006405s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = '4297f44b13955235245b2497399d7a93' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1501908954' WHERE `id` = 15 [ RunTime:0.0095s ]
+
+[ 2017-08-05T12:55:54+08:00 ] 223.81.193.55 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006226s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006267s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-05T12:55:54+08:00 ] 223.81.193.55 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006820s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 256 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 257 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 272 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 273 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 288 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 289 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 304 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 305 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 374 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 375 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 389 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 390 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 404 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-08-05T12:57:03+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006435s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006500s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-08-05T12:57:05+08:00 ] 223.81.193.55 /index.php/Admin/Project/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006438s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006483s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0004s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0004s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: create_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/ecf71ef050a209a9a2d2083bbf4093ab.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-08-05T12:57:11+08:00 ] 223.81.193.55 /index.php/Admin/Finance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Finance/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006260s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006305s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 53 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-08-05T12:57:23+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006659s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006702s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-08-05T12:57:31+08:00 ] 223.81.193.55 /index.php/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Config/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006424s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006467s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2017-08-05T13:01:02+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006686s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006730s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-08-05T13:01:04+08:00 ] 223.81.193.55 /Admin/Ajax/addCompanyMember?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/addCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006552s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006593s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+
+[ 2017-08-05T13:01:07+08:00 ] 223.81.193.55 /Admin/Ajax/addCompanyMember?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/addCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006625s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006665s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+
+[ 2017-08-05T13:01:10+08:00 ] 223.81.193.55 /Admin/Ajax/addCompanyMember?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/addCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006677s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006717s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+
+[ 2017-08-05T13:01:12+08:00 ] 223.81.193.55 /Admin/Ajax/addCompanyMember?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/addCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.009861s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.009914s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0005s ]
+
+[ 2017-08-05T13:01:16+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006488s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006531s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-08-05T13:01:19+08:00 ] 223.81.193.55 /Admin/Ajax/addCompanyMember?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/addCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006443s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006483s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+
+[ 2017-08-05T13:01:29+08:00 ] 223.81.193.55 /index.php/Admin/Finance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Finance/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006202s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006244s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 53 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-08-05T13:01:59+08:00 ] 223.81.193.55 /index.php/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Config/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006316s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006356s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-08-05T13:02:04+08:00 ] 223.81.193.55 /index.php/Admin/Project/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006292s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006334s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: create_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/ecf71ef050a209a9a2d2083bbf4093ab.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-08-05T13:04:46+08:00 ] 223.81.193.55 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006411s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006454s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2017-08-05T13:04:46+08:00 ] 223.81.193.55 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.007845s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.007885s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 256 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 257 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 272 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 273 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 288 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 289 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 304 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 305 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 374 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 375 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 389 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 390 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 404 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-05T13:04:46+08:00 ] 223.81.193.55 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006473s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006514s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-08-05T13:04:46+08:00 ] 223.81.193.55 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006256s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 256 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 257 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 272 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 273 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 288 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 289 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 304 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 305 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 374 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 375 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 389 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 390 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 404 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-08-05T13:04:47+08:00 ] 223.81.193.55 /index.php/Admin/Project/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006386s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006430s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: create_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/ecf71ef050a209a9a2d2083bbf4093ab.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-08-05T13:05:01+08:00 ] 223.81.193.55 /index.php/Admin/Finance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Finance/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006741s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006782s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0004s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 53 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-08-05T13:06:59+08:00 ] 223.81.193.55 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006413s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006454s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-08-05T13:06:59+08:00 ] 223.81.193.55 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006216s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 256 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 257 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 272 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 273 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 288 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 289 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 304 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 305 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 374 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 375 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 389 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 390 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 404 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-08-05T13:06:59+08:00 ] 223.81.193.55 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006358s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006398s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2017-08-05T13:06:59+08:00 ] 223.81.193.55 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Index/main' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006262s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 256 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 257 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 272 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 273 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 288 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 289 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 304 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 305 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 374 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 375 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 389 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 390 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 404 行.
+NOTIC: [8] Undefined variable: vo /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/1295f5dea726514085835446ec680db7.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-08-05T13:07:03+08:00 ] 223.81.193.55 /index.php/Admin/Project/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006538s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006582s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: create_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/ecf71ef050a209a9a2d2083bbf4093ab.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-08-05T13:07:14+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006503s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006548s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-08-05T13:07:18+08:00 ] 223.81.193.55 /Admin/Ajax/getGroup?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/getGroup' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006489s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006528s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company_group` WHERE `cid` = 3  [ RunTime:0.0001s ]
+
+[ 2017-08-05T13:07:20+08:00 ] 223.81.193.55 /Admin/Ajax/getCompanyMember?cid=3&gid=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/getCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006763s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006827s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`user_name` FROM `admin_user` WHERE `cid` = 3 AND `gid` = 24  [ RunTime:0.0002s ]
+
+[ 2017-08-05T13:07:21+08:00 ] 223.81.193.55 /Admin/Ajax/getCompanyMember?cid=3&gid=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/getCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006321s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006361s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`user_name` FROM `admin_user` WHERE `cid` = 3 AND `gid` = 24  [ RunTime:0.0001s ]
+
+[ 2017-08-05T13:07:21+08:00 ] 223.81.193.55 /Admin/Ajax/getCompanyMember?cid=3&gid=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/getCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006069s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006108s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`user_name` FROM `admin_user` WHERE `cid` = 3 AND `gid` = 24  [ RunTime:0.0001s ]
+
+[ 2017-08-05T13:07:22+08:00 ] 223.81.193.55 /Admin/Ajax/getCompanyMember?cid=3&gid=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/getCompanyMember' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006158s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006196s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`user_name` FROM `admin_user` WHERE `cid` = 3 AND `gid` = 24  [ RunTime:0.0001s ]
+
+[ 2017-08-05T13:07:28+08:00 ] 223.81.193.55 /index.php/Admin/Finance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Finance/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006189s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006230s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 53 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-08-05T13:07:31+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006244s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006286s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-08-05T13:07:36+08:00 ] 223.81.193.55 /index.php/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Config/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006332s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006373s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-08-05T13:07:37+08:00 ] 223.81.193.55 /index.php/Admin/Work/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006377s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006422s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: start_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/WorkController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: end_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/WorkController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: start_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/WorkController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member_work` WHERE `uid` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-08-05T13:07:39+08:00 ] 223.81.193.55 /index.php/Admin/Work/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/addWork' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006823s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006891s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-05T13:07:40+08:00 ] 223.81.193.55 /index.php/Admin/Work/lay/lib/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/lay' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006248s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006288s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-08-05T13:07:45+08:00 ] 223.81.193.55 /index.php/Admin/Work/makeupWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/makeupWork' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006258s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006309s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: mid /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/e275ac76259a342892ca046c31c96a0d.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-08-05T13:07:45+08:00 ] 223.81.193.55 /index.php/Admin/Work/lay/modules/laydate.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/lay' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006082s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006124s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-08-05T13:07:56+08:00 ] 223.81.193.55 /index.php/Admin/AuthGroup/authGroupList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'AuthGroup/authGroupList' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006248s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006291s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_auth_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `admin_auth_group` WHERE `status` = 1 ORDER BY is_manage DESC,id DESC LIMIT 0,15   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-08-05T13:07:59+08:00 ] 223.81.193.55 /index.php/Admin/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Menu/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006408s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006450s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `status` = 1 AND `is_menu` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 40 行.
+NOTIC: [8] Undefined variable: page /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/b77e068d260ac0d38d7b31e435bb41fe.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-08-05T13:08:13+08:00 ] 223.81.193.55 /index.php/Admin/Company/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Company/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006647s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006693s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `company` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `company` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `company_group` WHERE `cid` = 3  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `company_group` WHERE `cid` = 2  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `company_group` WHERE `cid` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2017-08-05T13:08:28+08:00 ] 223.81.193.55 /index.php/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'User/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006330s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/UserController.class.php 第 27 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_user` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `admin_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=16 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=31 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=32 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=40 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=41 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `company` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `group_name` FROM `company_group` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT b.title FROM `admin_auth_group_access` INNER JOIN admin_auth_group as b on admin_auth_group_access.group_id = b.id  WHERE ( admin_auth_group_access.uid=42 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/UserController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/UserController.class.php 第 35 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-05T13:08:31+08:00 ] 223.81.193.55 /index.php/Admin/User/addUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'User/addUser' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.010570s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.010613s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0004s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_auth_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `admin_auth_group` WHERE `status` = 1 ORDER BY is_manage DESC,id DESC LIMIT 0,15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 15 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 29 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 31 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 60 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 76 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 92 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 106 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 106 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 106 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 129 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 131 行.
+NOTIC: [8] Undefined variable: user_id /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 139 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 143 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 143 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 143 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 143 行.
+NOTIC: [8] Uninitialized string offset: 0 /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-08-05T13:08:35+08:00 ] 223.81.193.55 /Admin/Ajax/userExport?cid=&gid
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/userExport' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006287s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006330s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/AjaxController.class.php 第 105 行.
+SQL: SELECT `id`,`user_name`,`tpassword` FROM `admin_user`  [ RunTime:0.0002s ]
+
+[ 2017-08-05T13:08:40+08:00 ] 223.81.193.55 /Admin/Ajax/eximport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Ajax/eximport' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006404s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006449s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-08-05T13:08:44+08:00 ] 223.81.193.55 /index.php/Admin/User/addUser.html?user_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'User/addUser' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006459s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006499s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin_user` WHERE `id` = 15 AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `group_id` FROM `admin_auth_group_access` WHERE ( uid=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_auth_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `admin_auth_group` WHERE `status` = 1 ORDER BY is_manage DESC,id DESC LIMIT 0,15   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: user_id /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/d2b563498cd9c568fd51ae4cf6890d40.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-08-05T13:08:47+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006285s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006327s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-08-05T13:09:02+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006307s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006349s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-08-05T13:09:05+08:00 ] 223.81.193.55 /index.php/Admin/Project/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006376s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006444s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/ProjectController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: create_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/ecf71ef050a209a9a2d2083bbf4093ab.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-08-05T13:09:08+08:00 ] 223.81.193.55 /index.php/Admin/Project/addProject.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Project/addProject' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006781s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006824s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `company` ORDER BY id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-08-05T13:09:10+08:00 ] 223.81.193.55 /index.php/Admin/Finance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Finance/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006261s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006302s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `company_group` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 46 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `project` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `project` LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: person_sum_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/wwwroot/ygjx.9xgk.com/Application/Admin/Model/ProjectModel.class.php 第 74 行.
+SQL: SELECT `eid` FROM `project_member` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0003s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `wages` FROM `admin_user` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(work_hours) AS tp_sum FROM `member_work` WHERE `pid` = 7 AND `uid` = 19 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 52 行.
+NOTIC: [8] Undefined variable: where /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/FinanceController.class.php 第 53 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-05T13:09:12+08:00 ] 223.81.193.55 /index.php/Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Config/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006307s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006349s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0003s ]
+SQL: SELECT `taxation_formula` FROM `config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-08-05T13:09:13+08:00 ] 223.81.193.55 /index.php/Admin/Work/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+INFO: [ action_begin ] --START--
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `menu_name` = 'Work/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.006336s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.006378s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0003s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','21','24','25','26','27','22','28','29','30','31','37','42','48','49','50','51','52','53','38','23','32','33','34','35','39','70','44','59','60','61','62','40','45','71','41','64','63','65','69','67','68','66') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: start_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/WorkController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: end_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/WorkController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: start_time /home/wwwroot/ygjx.9xgk.com/Application/Admin/Controller/WorkController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `member_work` WHERE `uid` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0006s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+NOTIC: [8] Undefined index: additional_recording_time /home/wwwroot/ygjx.9xgk.com/Application/Runtime/Cache/Admin/db5d82146fa639c75df0e9abe5435e4a.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+

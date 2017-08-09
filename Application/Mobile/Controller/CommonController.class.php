@@ -4,8 +4,20 @@ use Think\Controller;
 
 
 class CommonController extends Controller {
-    
 
+    /**
+     * 构造函数
+     * @author luduoliang <luduoliang@imohoo.com> (2016/12/01)
+     */
+    public function __construct()
+    {
+
+        parent::__construct();
+        $user_info = session('user_info');
+        if(!$user_info['id']){
+            $this->redirect('Login/login');
+        }
+    }
     /**
      * @description:错误返回
      * @author wuyanwen(2016年11月22日)

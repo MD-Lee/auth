@@ -1,194 +1,397 @@
 <!DOCTYPE html>
+
 <html>
 
+
+
 	<head>
+
 		<meta charset="UTF-8">
+
 		<title>Table</title>
+
 		<link rel="stylesheet" href="__PUBLIC__/plugins/layui/css/layui.css" media="all" />
+
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+
 		<link rel="stylesheet" href="__PUBLIC__/plugins/font-awesome/css/font-awesome.min.css">
+        <script src="__PUBLIC__/plugins/jquery.min.js"></script>
+		<script>
+        	$(function(){
+				$(".p_group").click(function(){
+					$(this).parent("tr").next(".group_tgl").toggle("fast");
+					$(this).find("p").toggleClass("t_arrow");
+					});
+				});
+        </script>
 	</head>
 
+
+
 	<body>
+
 		<div class="admin-main">
+
 		
+
 			<blockquote class="layui-elem-quote">
+
 				<button  class="layui-btn layui-btn-small add">
+
 					<i class="layui-icon">&#xe608;</i> 添加公司
+
 				</button>
+
 			</blockquote>
+
 			<fieldset class="layui-elem-field">
+
 				<legend>公司列表</legend>
+
 				<div class="layui-field-box">
+
 				<table class="layui-table">
+
 					  <thead>
+
 					    <tr>
+
 					      <th>序号</th>
+
 					      <th>公司名称</th>
+
 					      <th>操作</th>
+
 					    </tr> 
+
 					  </thead>
+
 					  <tbody>
+
 					  <foreach name="company_info" key="k" item="vo">
+
 					    <tr>
-					      <td>{$vo['id']}</td>
-					      <td>{$vo.name}
-							  <foreach name="vo.group_list" item="t">
-							{$t.group_name}
-							<a  data="{$t.id}" class="layui-btn layui-btn-danger layui-btn-mini groupdel"><i class="layui-icon">&#xe640;</i>删除</a>
-							<a data="{$t.id}" class="layui-btn layui-btn-mini layui-btn-normal groupedit"><i class="layui-icon">&#xe642;</i>编辑</a>
-							  </foreach>
 
-						  </td>
+					      <td style="width:10%">{$vo['id']}</td>
 
-					      <td>
+					      <td style="width:45%" class="p_group"><span>{$vo.name}</span><p class="t_arrow">&nbsp;</p></td>
+					      <td style="width:45%">
+
 							<a data="{$vo.id}" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+
 							<a data="{$vo.id}" class="layui-btn layui-btn-mini group"><i class="layui-icon">&#xe608;</i>添加小组</a>
+
 							<a  data="{$vo.id}" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
+
 					      </td>
+
 					    </tr>
-					    </foreach>
+                        
+                        
+                        <tr class="group_tgl">
+                        	<td colspan="3" style="margin:0; padding:0;">
+                            	<table class="layui-table c_tab" style="margin:0; padding:0;">
+                                <foreach name="vo.group_list" item="t">
+                                	<tr class="group_row">
+                                       <td class="first_r" style="width:10%;"></td>
+                                       <td class="group_row" style="width:45%">{$t.group_name}</td>
+                                       <td class="last_r group_row" style="width:45%">
+                                            <a data="{$t.id}" class="layui-btn layui-btn-mini layui-btn-normal groupedit"><i class="layui-icon">&#xe642;</i>编辑</a>
+                                            <a  data="{$t.id}" class="layui-btn layui-btn-danger layui-btn-mini groupdel"><i class="layui-icon">&#xe640;</i>删除</a>
+                                       </td>
+                                        
+                                    </tr>
+                                    </foreach>
+                                </table>
+                            </td>
+                        </tr>
+
+					  </foreach>
+
 					  </tbody>
+
 				</table>
 
+
+
 				</div>
+
 			</fieldset>
+
 			<div class="admin-table-page">
+
 				<div id="page" class="page">
+
 				{$page}
+
 				</div>
+
 			</div>
+
 		</div>
 
+
+
 		<script type="text/javascript" src="__PUBLIC__/plugins/layui/layui.js"></script>
+
 		<script>
+
 			layui.use(['laypage','layer','form'], function() {
+
 				var laypage = layui.laypage,
+
 					$ = layui.jquery
+
 					//请求表单
+
 				 $('.add').click(function(){
+
 					var url = "{:U('Company/addCompany')}";
+
 					$.get(url,function(data){
+
 						if(data.status == 'error'){
+
 							layer.msg(data.msg,{icon: 5});
+
 							return;
+
 						}
+
 						layer.open({
+
 							  title:'添加公司',
+
 							  type: 1,
+
 							  skin: 'layui-layer-rim', //加上边框
-							  area: ['500px'], //宽高
+
+							  area: ['400px'], //宽高
+
 							  content: data,
+
 						});
+
 					})
+
 				 });
+
 				//编辑用户
+
 				$('.edit').click(function(){
+
 					var company_id = $(this).attr('data');
+
 					var url = "{:U('Company/editCompany')}";
+
 					$.get(url,{company_id:company_id},function(data){
+
 						if(data.status == 'error'){
+
 							layer.msg(data.msg,{icon: 5});
+
 							return;
+
 						}
+
 						layer.open({
+
 							  title:'编辑用户',
+
 							  type: 1,
+
 							  skin: 'layui-layer-rim', //加上边框
-							  area: ['500px'], //宽高
+
+							  area: ['400px'], //宽高
+
 							  content: data,
+
 						});
+
 					})
+
 				 });
+
                 //编辑公司小组
+
                 $('.groupedit').click(function(){
+
                     var group_id = $(this).attr('data');
+
                     var url = "{:U('Company/editCompanyGroup')}";
+
                     $.get(url,{group_id:group_id},function(data){
+
                         if(data.status == 'error'){
+
                             layer.msg(data.msg,{icon: 5});
+
                             return;
+
                         }
+
                         layer.open({
+
                             title:'编辑用户',
+
                             type: 1,
+
                             skin: 'layui-layer-rim', //加上边框
-                            area: ['500px'], //宽高
+
+                            area: ['400px'], //宽高
+
                             content: data,
+
                         });
+
                     })
+
                 });
+
 				//添加小组
+
 				$('.group').click(function(){
+
 					var company_id = $(this).attr('data');
+
 					var url = "{:U('Company/addGroup')}";
+
 					$.get(url,{company_id:company_id},function(data){
+
 						if(data.status == 'error'){
+
 							layer.msg(data.msg,{icon: 5});
+
 							return;
+
 						}
+
 						layer.open({
+
 							  title:'添加小组',
+
 							  type: 1,
+
 							  skin: 'layui-layer-rim', //加上边框
-							  area: ['500px','500px'], //宽高
+
+							  area: ['400px','300px'], //宽高
+
 							  content: data,
+
 						});
+
 					})
+
 				 });
+
 				
+
 				//删除
+
 				$('.del').click(function(){
+
 					var company_id = $(this).attr('data');
+
 					var url = "{:U('Company/deleteCompany')}";
+
 					layer.confirm('确定删除吗?', {
+
 						  icon: 3,
+
 						  skin: 'layer-ext-moon',
+
 						  btn: ['确认','取消'] //按钮
+
 						}, function(){
+
 							$.post(url,{company_id:company_id},function(data){
+
 								if(data.status == 'error'){
+
 									  layer.msg(data.msg,{icon: 5});//失败的表情
+
 									  return;
+
 								  }else{
+
 									  layer.msg(data.msg, {
+
 										  icon: 6,//成功的表情
+
 										  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+
 										}, function(){
+
 										   location.reload();
+
 										}); 
+
 								  }	
+
 							})
+
 					  });
+
 				});
+
                 //删除
+
                 $('.groupdel').click(function(){
+
                     var group_id = $(this).attr('data');
+
                     var url = "{:U('Company/deleteCompanyGroup')}";
+
                     layer.confirm('确定删除吗?', {
+
                         icon: 3,
+
                         skin: 'layer-ext-moon',
+
                         btn: ['确认','取消'] //按钮
+
                     }, function(){
+
                         $.post(url,{group_id:group_id},function(data){
+
                             if(data.status == 'error'){
+
                                 layer.msg(data.msg,{icon: 5});//失败的表情
+
                                 return;
+
                             }else{
+
                                 layer.msg(data.msg, {
+
                                     icon: 6,//成功的表情
+
                                     time: 2000 //2秒关闭（如果不配置，默认是3秒）
+
                                 }, function(){
+
                                     location.reload();
+
                                 });
+
                             }
+
                         })
+
                     });
+
                 })
+
 				
+
 			});
+
 		</script>
 
+
+
 	</body>
+
+
 
 </html>

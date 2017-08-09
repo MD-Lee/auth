@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>打印分账单</title>
+
+	<link rel="stylesheet" href="__PUBLIC__/plugins/layui/css/layui.css" media="all" />
+
+	<link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+
+	<link rel="stylesheet" href="__PUBLIC__/plugins/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+
+
+<body>
+<div class="project_con">
+    <fieldset class="layui-elem-field">
+        <legend>{$project_info['company_name']}</legend>
+        <div class="mar_row">
+        	<h1 class="projcet_title">项目成本利润核算明细表</h1>
+            <div class="search_result">
+                <span class="mar_r_10">项目编号：{$project_info['create_time']|date="Ym-d",###}</span>
+                <span class="mar_r_10">填表日期：{$project_info['create_time']|date="Y-m-d",###}</span>
+            </div>
+            <table class="layui-table" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>单位名称</td>
+                    <td colspan="2">{$project_info['company_name']}</td>
+                    <td>项目负责人</td>
+                    <td>王小明</td>
+                </tr>
+                <tr>
+                	<td>项目内容</td>
+                	<td colspan="2">{$project_info['project_name']}</td>
+                	<td>合同金额（元）</td>
+                	<td>{$project_info['money']}</td>
+                </tr>
+                <tr>
+                	<td rowspan="5">成本费用（元）</td>
+                	<td colspan="2">税费</td>
+                	<td colspan="2">{$project_info['taxation']}</td>
+                </tr>
+                <foreach name="project_info.cost_project_member" key="k" item="vo">
+                <tr>
+                	<td colspan="2">{$k}</td>
+                	<td colspan="2">{$vo}</td>
+                </tr>
+                </foreach>
+                <tr>
+                	<td colspan="2">费用合计（元）</td>
+                	<td colspan="2">{$project_info['operate_cost']}</td>
+                </tr>
+                <tr>
+                	<td colspan="2">项目人工成本合计（元）</td>
+                	<td colspan="2">{$project_info['person_cost']}</td>
+                </tr>
+                <tr class="head_row">
+                	<td>项目利润</td>
+                	<td>利润率</td>
+                	<td>业务人员提成（王小明）</td>
+                	<td>净利润率</td>
+                	<td>分账金额</td>
+                </tr>
+                <tr>
+                	<td>{$project_info['sum_profit']}</td>
+                	<td>{$project_info['profit_margin']}</td>
+                	<td>111</td>
+                	<td>222</td>
+                	<td>100.00</td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+</div>
+
+<div class="fz_con" style="display:block;">
+    <fieldset class="layui-elem-field">
+    
+        <legend>分账</legend>
+        <div class="mar_row">
+            <div class="search_result">
+                <span class="mar_r_10">该项目目前总利润：{$project_info['sum_profit']}</span>
+                <span class="mar_r_10">预计盈利率：{$project_info['profit_margin']}</span>
+            </div>
+    
+            <table class="layui-table" cellpadding="0" cellspacing="0">
+    
+                <tr class="first_row">
+                    <td>项目人员组成</td>
+                    <td>姓名</td>
+                    <td>分账金额</td>
+                    <td>分配率</td>
+                    <td>分配金额</td>
+                </tr>
+                <foreach name="project_info['project_member']" item="v">
+                    <tr>
+                        <td>{$v['auth_type_name']}</td>
+                        <td>{$v['user_name']}</td>
+                        <td>8373</td>
+                        <td>{$v['member_ratio']}%</td>
+                        <td>{$v['member_ratio_money']}</td>
+                    </tr>
+                </foreach>
+                <tr>
+                	<td colspan="3">合计</td>
+                	<td>100%</td>
+                	<td>1600.00</td>
+                </tr>
+    
+            </table>
+        </div>
+    </fieldset>
+</div>
+
+</body>
+
+
+
+</html>

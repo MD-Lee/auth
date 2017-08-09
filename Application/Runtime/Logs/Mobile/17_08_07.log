@@ -1,0 +1,3101 @@
+[ 2017-08-07T09:51:03+08:00 ] 223.81.192.160 /index.php/mobile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000309s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-08-07T09:51:03+08:00 ] 223.81.192.160 /index.php/Mobile/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000347s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-08-07T09:51:03+08:00 ] 223.81.192.160 /index.php/Mobile/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000317s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-08-07T09:51:32+08:00 ] 223.81.192.160 /index.php/Mobile/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000342s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = '4297f44b13955235245b2497399d7a93' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1502070692' WHERE `id` = 15 [ RunTime:0.0047s ]
+
+[ 2017-08-07T09:51:32+08:00 ] 223.81.192.160 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-08-07T09:51:45+08:00 ] 223.81.192.160 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000304s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-08-07T09:52:05+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000296s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T09:52:23+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000297s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0006s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-08-07T09:52:26+08:00 ] 223.81.192.160 /index.php/Mobile/In%60dex/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载控制器:In`dex
+
+[ 2017-08-07T09:52:30+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000318s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-08-07T09:59:17+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000311s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-08-07T10:00:14+08:00 ] 223.81.192.160 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000332s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T10:00:14+08:00 ] 223.81.192.160 /index.php/Mobile/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000322s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-08-07T10:00:14+08:00 ] 223.81.192.160 /index.php/Mobile/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000341s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-08-07T10:00:23+08:00 ] 223.81.192.160 /index.php/Mobile/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000277s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = '4297f44b13955235245b2497399d7a93' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1502071223' WHERE `id` = 15 [ RunTime:0.0046s ]
+
+[ 2017-08-07T10:00:24+08:00 ] 223.81.192.160 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000272s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-08-07T10:00:31+08:00 ] 223.81.192.160 /index.php/Mobile/In%60dex/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载控制器:In`dex
+
+[ 2017-08-07T10:00:33+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000310s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-07T10:00:35+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-08-07T10:00:36+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000314s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-08-07T10:00:47+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000276s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-08-07T10:01:00+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000305s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-08-07T10:02:07+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000301s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-08-07T10:02:45+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000277s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-08-07T10:04:38+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000273s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-07T10:05:07+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000274s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-08-07T10:05:58+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-08-07T10:06:17+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000305s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-08-07T10:06:24+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-08-07T10:06:50+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2017-08-07T10:35:11+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000294s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-08-07T10:36:02+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000450s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-08-07T10:36:02+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-08-07T10:36:43+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-08-07T10:36:43+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000296s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-08-07T10:37:43+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000275s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-08-07T10:38:20+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000342s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-08-07T10:38:20+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000355s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2017-08-07T10:40:00+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000287s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-07T10:40:00+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000300s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-08-07T10:40:55+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000339s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-08-07T10:41:54+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000325s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2017-08-07T10:42:11+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000478s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-08-07T10:43:22+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000305s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-08-07T10:52:33+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000291s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2017-08-07T10:52:33+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000326s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-08-07T10:53:03+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-08-07T10:53:04+08:00 ] 223.81.192.160 /index.php/Mobile/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000294s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-08-07T10:53:06+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-07T10:53:10+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000277s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-08-07T10:53:12+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000370s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-08-07T10:53:22+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000285s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-07T10:54:06+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000300s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-08-07T10:55:04+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000274s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-08-07T10:59:31+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000280s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2017-08-07T11:04:56+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000288s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-08-07T11:04:56+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000278s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-08-07T11:06:03+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000338s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-08-07T11:06:03+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000286s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2017-08-07T11:06:06+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000485s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-07T11:07:06+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000303s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-08-07T11:07:06+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000320s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-08-07T11:07:31+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000274s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-08-07T11:08:10+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000311s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-08-07T11:08:11+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000418s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-07T11:09:28+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000321s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T11:09:31+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000289s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-08-07T11:09:45+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000279s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2017-08-07T11:09:45+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2017-08-07T11:10:15+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000295s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-08-07T11:10:15+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000279s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-08-07T11:10:50+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000274s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-08-07T11:10:50+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000278s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-08-07T11:10:52+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000332s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-08-07T11:11:05+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000290s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-08-07T11:11:52+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000300s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-08-07T11:13:34+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000301s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-08-07T11:14:09+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000290s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-07T11:14:22+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000357s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-07T11:14:23+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000277s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-08-07T11:15:06+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000363s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-07T11:15:23+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000331s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-08-07T11:15:52+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000295s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-08-07T11:16:32+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000287s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-07T11:16:49+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000290s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-08-07T11:16:56+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000316s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-07T11:16:56+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000309s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-08-07T11:17:42+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000290s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-08-07T11:17:47+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000287s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-07T11:17:48+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000276s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-07T11:18:18+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000289s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-07T11:18:41+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000280s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-08-07T11:18:51+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.001320s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001373s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-08-07T11:18:51+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000308s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-08-07T11:19:38+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000289s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-08-07T11:19:47+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000309s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-08-07T11:19:48+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000328s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-08-07T11:20:04+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000294s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-08-07T11:20:16+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000309s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-08-07T11:20:22+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000316s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0004s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-08-07T11:22:12+08:00 ] 223.81.192.160 /index.php/Mobile/Index/detailWork/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000276s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `member_work` WHERE `uid` = 15 AND `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.0003s ]
+SQL: SELECT `project_name` FROM `project` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-07T11:22:14+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000280s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2017-08-07T11:22:16+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000305s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-07T11:23:02+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000276s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-08-07T11:23:28+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000306s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2017-08-07T11:23:39+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000321s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0006s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-08-07T11:23:53+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000291s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-08-07T11:24:21+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000285s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-08-07T11:24:35+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000273s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-08-07T11:25:35+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000292s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-08-07T11:26:01+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000285s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-08-07T11:28:39+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000312s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0004s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-08-07T11:29:19+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000275s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-08-07T11:29:27+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000279s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: INSERT INTO `member_work` (`uid`,`created_time`,`pid`,`work_hours`,`work_content`) VALUES ('15','1502076567','0','','') [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-08-07T11:29:30+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000359s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: INSERT INTO `member_work` (`uid`,`created_time`,`pid`,`work_hours`,`work_content`) VALUES ('15','1502076570','0','','') [ RunTime:0.0199s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-08-07T11:29:48+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000285s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `member_work` [ RunTime:0.0005s ]
+SQL: INSERT INTO `member_work` (`uid`,`created_time`,`pid`,`work_hours`,`work_content`) VALUES ('15','1502076588','0','','') [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-08-07T11:30:00+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000292s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-08-07T11:30:02+08:00 ] 223.81.192.160 /index.php/Mobile/In%60dex/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载控制器:In`dex
+
+[ 2017-08-07T11:43:51+08:00 ] 223.81.192.160 /index.php/Mobile/Index/addWork.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ action_begin ] --START--
+INFO: Run Admin\Behaviors\OptionRecordBehavior [ RunTime:0.000280s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0005s ]
+SQL: SELECT `pid`,`id` FROM `project_member` WHERE `eid` = 15  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `project_member` [ RunTime:0.0003s ]
+SQL: SELECT b.project_name FROM `project_member` INNER JOIN project as b on project_member.pid = b.id  WHERE ( project_member.id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
